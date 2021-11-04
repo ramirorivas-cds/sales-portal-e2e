@@ -1,5 +1,7 @@
-import { Given, When, Then } from '@wdio/cucumber-framework';
+import { When, Then } from '@wdio/cucumber-framework';
 import RewardPage from '../pageobjects/reward.page';
+import CoveragePage from '../pageobjects/coverage.page';
+import { enums } from '../../utils/enums';
 
 const pages = {
     reward : RewardPage,

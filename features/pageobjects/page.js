@@ -6,8 +6,6 @@
 import { config } from '../../wdio.conf';
 import Spinner from './components/spinner';
 import QuoteBox from './components/quoteBox';
-import { values } from 'lodash';
-
 
 export default class Page {
 

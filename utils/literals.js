@@ -8,14 +8,15 @@ const addresses = {
 
 const urls = {
     rewardPageUrl : 'https://test-app.openhouseinsurance.com/quote/rewards',
-    kikoutPageUrl: 'https://test.openhouseinsurance.com/knockout',
+    kikoutPageUrl: 'https://test-app.openhouseinsurance.com/knockout',
     homePageUrl: 'https://test.openhouseinsurance.com',
     aboutUsPageUrl: 'https://test.openhouseinsurance.com/about-us',
     getStartedPageUrl: 'https://test.openhouseinsurance.com/get-started',
     ourInsurancePageUrl: 'https://test.openhouseinsurance.com/our-insurance',
     contactUsPageUrl: 'https://test.openhouseinsurance.com/contact-us',
     myAccountPageUrl: 'https://test-my.openhouseinsurance.com/',
-    coveragePageUrl: 'https://test-app.openhouseinsurance.com/quote/coverages'
+    coveragePageUrl: 'https://test-app.openhouseinsurance.com/quote/coverages',
+    infoPageUrl: 'https://test-app.openhouseinsurance.com/quote/insured'
 }
 
 const paths = {
@@ -39,7 +40,6 @@ const creditScoreValues = {
     excellent: 70,
     exceptional: 230,
 }
-
 
 export const literals = {
     addresses,

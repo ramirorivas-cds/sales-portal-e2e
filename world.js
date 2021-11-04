@@ -1,4 +1,7 @@
 module.exports = {
     quoteValue : '',
-    rewardAmount: ''
+    rewardAmount: '',
+
+    // Coverage page context
+    isCoverageModalOpened: false,
 }

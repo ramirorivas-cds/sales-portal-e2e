@@ -96,7 +96,7 @@ Feature: Rewards tests
             | green path | decreases |
 
     @Rewards006 @web @salesPortal
-    Scenario Outline: As a user, if I select more than $100 in rewards I see a modal
+    Scenario Outline: As a user, if I select more than $100 in non-rated rewards I see a modal
         Given I am on the home page
         And I enter a <address> address
         When I select 100 dollars in non rated rewards
@@ -108,7 +108,9 @@ Feature: Rewards tests
             | address    |
             | green path |
 
-    @Rewards007 @web @salesPortal
+    # add a test to verify that after we have closed the modal we do not keep on decreasing the premium. 
+
+    @Rewards007 @web @salesPortal 
     Scenario Outline: As a user, I can see the amount of rewards selected in the quoteBox
         Given I am on the home page
         And I enter a <address> address
@@ -125,3 +127,4 @@ Feature: Rewards tests
         Examples:
             | address    |
             | green path |
+    

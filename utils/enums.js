@@ -8,6 +8,8 @@ const pathTypes = {
 
 const salesSections = {
     rewardPage: 'reward',
+    coveragePage : 'coverage',
+    infoPage: 'info',
     kickout: 'kickout',
     homePage: 'home',
     aboutUsPage: 'about us',
@@ -25,7 +27,8 @@ const pagesIds = {
     salesOurInsurance: 'SalesAboutUs',
     salesContactUs: 'SalesContactUs',
     salesMyAccount: 'SalesMyAccount',
-    salesCoverages: 'SalesCoverage'
+    salesCoverages: 'SalesCoverage',
+    salesInfo: 'SalesInfo'
 }
 
 const ratedRewards = {
@@ -74,6 +77,12 @@ const creditScoreLimits = {
     highest: 'highest'
 }
 
+const coverageType = {
+    basic: 'basic',
+    recommended: 'recommended',
+    luxury: 'luxury'
+}
+
 export const enums = {
     pathTypes,
     salesSections,
@@ -81,5 +90,6 @@ export const enums = {
     ratedRewards,
     nonRatedRewards,
     creditScoreLimits,
-    rewardsLimits
+    rewardsLimits,
+    coverageType
 }

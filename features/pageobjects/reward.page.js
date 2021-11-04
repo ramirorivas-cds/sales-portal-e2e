@@ -253,10 +253,10 @@ class RewardPage extends Page {
         return selected;
     }
 
-    async selectReward(reward) {
-        let selectedReward = await this.elementSwitcher(reward);
-        await selectedReward.scrollIntoView(true);
-        await browser.execute(async (element) => {
+    async selectReward(reward) { //TO-DO: export browser.execute function to custom commands
+        let selectedReward = await this.elementSwitcher(reward); 
+        await selectedReward.scrollIntoView(true); 
+        await browser.execute(async (element) => { 
             await element.click();
         }, selectedReward);
     }
@@ -283,6 +283,7 @@ class RewardPage extends Page {
     async goToNextPage() {
         await this.quoteValue.waitForDisplayed();
         await this.goToRewardsBtn.waitForClick();
+        await super.waitForSpinner();
     }
 
 }
