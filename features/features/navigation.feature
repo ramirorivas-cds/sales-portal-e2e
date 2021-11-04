@@ -12,8 +12,8 @@ Feature: Navigation feature
         Examples:
             | address     | page    |
             | green path  | reward  |
-            # | yellow path | reward  |
-            # | red path    | kickout |
+            | yellow path | reward  |
+            | red path    | kickout |
 
     @Nav002 @sections @web @salesPortal
     Scenario Outline: As a user, I can navegate through the different sections of the home page

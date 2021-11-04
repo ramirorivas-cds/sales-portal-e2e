@@ -16,7 +16,18 @@ export const expectTextToEqIgnoreCase = (actual,expected) => {
 }
 
 export const expectQuoteTo = async (action,actualValue) => {
-    action === 'increases'
-        ? chaiExpect(parseInt(actualValue)).to.be.greaterThan(parseInt(world.quoteValue))
-        : chaiExpect(parseInt(world.quoteValue)).to.be.greaterThan(parseInt(actualValue));
+    switch(action.toLowerCase()) {
+        case 'increases':
+            chaiExpect(parseInt(actualValue)).to.be.greaterThan(parseInt(world.quoteValue));
+            break;
+        case 'decreases':
+            chaiExpect(parseInt(world.quoteValue)).to.be.greaterThan(parseInt(actualValue));
+            break;
+        case 'remains the same':
+            chaiExpect(parseInt(world.quoteValue)).to.eq(parseInt(actualValue));
+            break;
+        default:
+            throw new Error(`${action} is not a valid action`);
+
+    }
 }

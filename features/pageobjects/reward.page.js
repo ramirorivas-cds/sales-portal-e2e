@@ -104,6 +104,7 @@ class RewardPage extends Page {
     get gymMemberRwd()          { return $('img[src*="GYM_MEMBER"]') }
     get smartDevicesRwd()       { return $('img[src*="SMART_DEVICES"]') }
     get rewardsModal()          { return $('[role="dialog"]')}
+    get modalCloseBtn()         { return $('h2 button')}
 
     get quoteValue()            { return $('h3 span:first-child') }
 
@@ -273,6 +274,10 @@ class RewardPage extends Page {
             await this.waitForQuoteToChange();  
             i++;  
         }  
+    }
+
+    async closeModal() {
+        await this.modalCloseBtn.waitForClick();
     }
 
     async screenValidation(element, reverse) {

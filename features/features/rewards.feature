@@ -108,9 +108,7 @@ Feature: Rewards tests
             | address    |
             | green path |
 
-    # add a test to verify that after we have closed the modal we do not keep on decreasing the premium. 
-
-    @Rewards007 @web @salesPortal 
+    @Rewards007 @web @salesPortal
     Scenario Outline: As a user, I can see the amount of rewards selected in the quoteBox
         Given I am on the home page
         And I enter a <address> address
@@ -127,4 +125,20 @@ Feature: Rewards tests
         Examples:
             | address    |
             | green path |
-    
+
+    @Rewards008 @web @salesPortal 
+    Scenario Outline: As a user, If I exceed the non-rated rewards amount, the rewards I select don't affect the pemium
+        Given I am on the home page
+        And I enter a <address> address
+        And I select 100 dollars in non rated rewards and close the modal
+        When I select the following rewards
+            | rewards       |
+            | gym member    |
+            | smart devices |
+        Then I see my premium quote <action>
+
+        Examples:
+            | address    | action           |
+            | green path | remains the same |
+
+
