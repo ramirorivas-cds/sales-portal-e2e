@@ -46,13 +46,14 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 1,
+    maxInstances: 2,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
-    capabilities: [{
+    capabilities: [
+        {
 
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
@@ -65,7 +66,11 @@ exports.config = {
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
-    }],
+    },
+    {
+        browser: 'firefox'
+    }
+],
     //
     // ===================
     // Test Configurations
@@ -305,12 +310,11 @@ exports.config = {
      * @param {string}             result.error    error stack if scenario failed
      * @param {number}             result.duration duration of scenario in milliseconds
      */
-    afterStep: function (step, scenario, result) {
-
+    afterStep: async function (step, scenario, result) {
         //take screenshot on step fail 
         if (!result.passed) {
-            browser.saveScreenshot(
-                './reports/screenshots/Fail_' + moment().format('DD-MMM-YYYY-HH-MM-SS') + '.png'
+            await browser.saveScreenshot(
+                './reports/screenshots/Fail_.png'
             );
         }
     },

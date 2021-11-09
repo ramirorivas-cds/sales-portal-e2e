@@ -78,18 +78,13 @@ class CoveragePage extends Page {
         await selected.waitForClick();
     }
 
-    async goToNextPage(priorLosses = hasPriorLosses) {
+    async goToNextPage(priorLosses = hasPriorLosses) { //to-do add condition for prior losses 
         if(!isCoverageModalOpened) {
             await this.selectPriorLosses(priorLosses);
             await this.selectCoverageOption();
         }
         await this.continueToInfoBtn.waitForClick();
-    }
-
-
-
-
-    
+    }    
 
 }
 
