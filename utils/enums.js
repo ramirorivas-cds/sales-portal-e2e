@@ -28,7 +28,8 @@ const pagesIds = {
     salesContactUs: 'SalesContactUs',
     salesMyAccount: 'SalesMyAccount',
     salesCoverages: 'SalesCoverage',
-    salesInfo: 'SalesInfo'
+    salesInfo: 'SalesInfo',
+    salesCheckout: 'SalesCheckout',
 }
 
 const ratedRewards = {
@@ -67,6 +68,10 @@ const nonRatedRewards = {
     rewardModal: 'reward limit modal'
 }
 
+const errors = {
+    infoFormError: 'form error',
+}
+
 const rewardsLimits = {
     nonRatedLimit : 100,
     nonRatedIndex: 11
@@ -91,5 +96,6 @@ export const enums = {
     nonRatedRewards,
     creditScoreLimits,
     rewardsLimits,
-    coverageType
+    coverageType,
+    errors
 }

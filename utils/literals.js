@@ -16,7 +16,8 @@ const urls = {
     contactUsPageUrl: 'https://test.openhouseinsurance.com/contact-us',
     myAccountPageUrl: 'https://test-my.openhouseinsurance.com/',
     coveragePageUrl: 'https://test-app.openhouseinsurance.com/quote/coverages',
-    infoPageUrl: 'https://test-app.openhouseinsurance.com/quote/insured'
+    infoPageUrl: 'https://test-app.openhouseinsurance.com/quote/insured',
+    checkoutPageUrl: 'https://dev-app.openhouseinsurance.com/quote/disclosures',
 }
 
 const paths = {
@@ -41,10 +42,65 @@ const creditScoreValues = {
     exceptional: 230,
 }
 
+const primaryInsured = {
+
+    completeUser: {
+        firstName: 'John',
+        lastName: 'Doe',
+        email: `john${Math.floor(Math.random()*9999)}@testemail.com`,
+        phone: '1234561234',
+        birthday: '12/12/1979'
+    },
+
+    completeUserOverSixty: {
+        firstName: 'John',
+        lastName: 'Doe',
+        email: `john${Math.floor(Math.random()*9999)}@testemail.com`,
+        phone: '1234561234',
+        birthday: '12/12/1959'
+    },
+
+    incompleteUser: {
+        lastName: 'Doe',
+        email: `john${Math.floor(Math.random()*9999)}@testemail.com`,
+        phone: '1234561234',
+        birthday: '12/12/1979'
+    },
+}
+
+const coApplicant = {
+
+    completeCoApplicant: {
+        firstName: 'John',
+        lastName: 'Doe',
+        email: `john${Math.floor(Math.random()*9999)}@testemail.com`,
+        phone: '1234561234',
+        birthday: '12/12/1979'
+    },
+
+    completeCoApplicantOverSixty: {
+        firstName: 'John',
+        lastName: 'Doe',
+        email: `john${Math.floor(Math.random()*9999)}@testemail.com`,
+        phone: '1234561234',
+        birthday: '12/12/1959'
+    },
+
+    incompleteCoApplicant: {
+        firstName: 'John',
+        lastName: 'Doe',
+        email: `john${Math.floor(Math.random()*9999)}@testemail.com`,
+        phone: '1234561234',
+        birthday: '12/12/1979'
+    }
+}
+
 export const literals = {
     addresses,
     urls,
     paths,
     creditScoreLimitsVal,
-    creditScoreValues
+    creditScoreValues,
+    primaryInsured,
+    coApplicant
 }

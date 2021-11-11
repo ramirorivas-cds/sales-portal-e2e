@@ -9,6 +9,7 @@ import GetStartedPage from '../pageobjects/getStarted.page';
 import ContactUsPage from '../pageobjects/contactUs.page';
 import CoveragePage from '../pageobjects/coverage.page';
 import InfoPage from '../pageobjects/info.page';
+import CheckoutPage from '../pageobjects/checkout.page';
 
 const pages = {
     home  : HomePage,
@@ -19,7 +20,8 @@ const pages = {
     getStarted: GetStartedPage,
     contact: ContactUsPage,
     coverage : CoveragePage,
-    info : InfoPage
+    info : InfoPage,
+    checkout : CheckoutPage
 }
 
 Given(/^I am on the (\w+) page$/, async (page) => {

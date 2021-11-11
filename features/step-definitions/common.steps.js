@@ -1,10 +1,11 @@
 import { When, Then } from '@wdio/cucumber-framework';
+import InfoPage from '../pageobjects/info.page';
 import RewardPage from '../pageobjects/reward.page';
-import CoveragePage from '../pageobjects/coverage.page';
-import { enums } from '../../utils/enums';
+
 
 const pages = {
     reward : RewardPage,
+    info: InfoPage
 }
 
 Then(/^I see the following elements in the (.+) screen$/, async (page,table) => {
