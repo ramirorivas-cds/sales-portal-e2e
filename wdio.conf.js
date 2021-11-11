@@ -1,4 +1,3 @@
-import { moment } from 'moment';
 
 exports.config = {
 
@@ -67,9 +66,6 @@ exports.config = {
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
     },
-    {
-        browser: 'firefox'
-    }
 ],
     //
     // ===================
@@ -135,7 +131,7 @@ exports.config = {
             outputDir: 'driver-logs',
             args: ['--silent'],
             chromedriverCustomPath: '/Users/ramadamius/Downloads/chromedriver'
-    }]
+        }],
 ],
 
     // Framework you want to run your specs with.
@@ -266,6 +262,11 @@ exports.config = {
             }, { timeout, interval: 500 });
         }, true);
 
+        browser.addCommand('clickAndSetVal', async function (value, timeout = 10000, reverse = false) {
+            await this.click();
+            await this.setValue(value);
+        }, true);
+        
     },
     /**
      * Runs before a WebdriverIO command gets executed.

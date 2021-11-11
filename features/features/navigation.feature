@@ -40,7 +40,7 @@ Feature: Navigation feature
             | address    | page     |
             | green path | coverage |
 
-    @Nav004 @web @SalesPortal 
+    @Nav004 @web @SalesPortal
     Scenario Outline: As a user, I can navigate to your info screen
         Given I am on the home page
         And I enter a <address> address
