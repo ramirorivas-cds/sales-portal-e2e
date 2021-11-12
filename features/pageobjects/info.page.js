@@ -13,7 +13,7 @@ const {
 
 const {
     infoFormError
-} = enums.errors;
+} = enums.infoPageElements;
 
 class InfoPage extends Page {
 
@@ -39,11 +39,22 @@ class InfoPage extends Page {
     get coApplicantBirthday()  { return $$('#dateOfBirth')[1] }
     get coApplicantRelation()  { return $$('#relationshipToPrimary')[0] }
 
+    // Mortgagee
+
+    get mortgageeBtn() { return $('#addMortgageeFormButton')}
+    get primaryCompanyName()  { return $$('#bank_name')[0]}
+    get primaryLoanNumber() { return $$('#loan_number')[0]}
+    get primaryAddress()    { return $$('input#address')[1]}
+    get primaryCity()       { return $('input#city')}
+    get primaryState()      { return $$('#state[role="button"]')[0]}
+    get primaryPostal()     { return $$('input#postalCode')[0]}
+    get primaryType()       { return $$('#mortgageeType')[0]}
+
     // Validation error 
     get formError() { return $$('p + p')[5]}
 
     get goToCheckoutBtn() { return $('#proceedInsuredStepButton') }
-
+  
     getPageUrl() {
         return this.url;
     }
@@ -70,6 +81,29 @@ class InfoPage extends Page {
         await this.coApplicantPhone.setVal(phone);
         await this.coApplicantBirthday.clickAndSetVal(birthday);
         await this.coApplicantRelation.setVal(relationToPrimary);
+    }
+
+    async selectPrimaryMortgageeState (state = 'FL'){
+        await this.primaryState.waitForClick();
+        let selectedState = `li[data-value="${state}"]`;
+        await $(selectedState).waitForClick();
+    }
+
+    async selectPrimaryMortgageeType(primaryMortgagee = true){
+        await this.primaryType.waitForClick();
+        let selector = `li[data-value="${primaryMortgagee}"]`;
+        await $(selector).waitForClick();
+    }
+
+    async completePrimaryMortgagee({companyName, loanNumber, address, city, state, postalCode, isPrimaryMortgagee} = {}) {
+        await this.mortgageeBtn.waitForClick();
+        await this.primaryCompanyName.setVal(companyName);
+        await this.primaryLoanNumber.setVal(loanNumber);
+        await this.primaryAddress.setVal(address);
+        await this.primaryCity.setVal(city);
+        await this.selectPrimaryMortgageeState(state);
+        await this.primaryPostal.setVal(postalCode);
+        await this.selectPrimaryMortgageeType(isPrimaryMortgagee);
     }
 
     async clickOnContinue() {
@@ -102,6 +136,7 @@ class InfoPage extends Page {
         await this.clickOnContinue();
         await super.waitForSpinner();
     }
+
 }
 
 export default new InfoPage();

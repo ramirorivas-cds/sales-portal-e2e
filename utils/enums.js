@@ -30,6 +30,7 @@ const pagesIds = {
     salesCoverages: 'SalesCoverage',
     salesInfo: 'SalesInfo',
     salesCheckout: 'SalesCheckout',
+    salesSuccess: 'SalesSuccess'
 }
 
 const ratedRewards = {
@@ -68,7 +69,7 @@ const nonRatedRewards = {
     rewardModal: 'reward limit modal'
 }
 
-const errors = {
+const infoPageElements = {
     infoFormError: 'form error',
 }
 
@@ -88,6 +89,16 @@ const coverageType = {
     luxury: 'luxury'
 }
 
+const paymentType = {
+    mortgagee: 'mortgagee',
+    fullPay: 'full pay',
+    elevenPay: 'eleven pay'
+}
+
+const successElements = {
+    nextStepsButton: 'next steps button'
+}
+
 export const enums = {
     pathTypes,
     salesSections,
@@ -97,5 +108,7 @@ export const enums = {
     creditScoreLimits,
     rewardsLimits,
     coverageType,
-    errors
+    infoPageElements,
+    paymentType,
+    successElements
 }

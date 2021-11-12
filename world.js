@@ -4,4 +4,8 @@ module.exports = {
 
     // Coverage page context
     isCoverageModalOpened: false,
+
+    //Primary insured
+    primaryInsured: {},
+    primaryMortgagee: {},
 }
