@@ -18,6 +18,7 @@ const urls = {
     coveragePageUrl: 'https://test-app.openhouseinsurance.com/quote/coverages',
     infoPageUrl: 'https://test-app.openhouseinsurance.com/quote/insured',
     checkoutPageUrl: 'https://dev-app.openhouseinsurance.com/quote/disclosures',
+    successPageUrl: 'https://test-app.openhouseinsurance.com/policy',
 }
 
 const paths = {
@@ -95,6 +96,27 @@ const coApplicant = {
     }
 }
 
+const mortgagees = {
+    completePrimaryMortgagee : {
+        companyName: 'Testing Coorp',
+        loanNumber: '123443',
+        city: 'Orlando',
+        state: 'FL',
+        address: 'Fake Street 123',
+        postalCode: '32835',
+        isPrimaryMortgagee: true
+    },
+
+    incompletePrimaryMortgagee : {
+        companyName: 'Testing Coorp',
+        city: 'Orlando',
+        state: 'FL',
+        address: 'Fake Street 123',
+        postalCode: '32835',
+        isPrimaryMortgagee: true
+    }
+}
+
 export const literals = {
     addresses,
     urls,
@@ -102,5 +124,6 @@ export const literals = {
     creditScoreLimitsVal,
     creditScoreValues,
     primaryInsured,
-    coApplicant
+    coApplicant,
+    mortgagees
 }

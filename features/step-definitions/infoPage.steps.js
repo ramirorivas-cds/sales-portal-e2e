@@ -12,6 +12,11 @@ const {
     incompleteCoApplicant,
 } = literals.coApplicant
 
+const {
+    completePrimaryMortgagee,
+    incompletePrimaryMortgagee
+} = literals.mortgagees
+
 When(/^I enter a primary insured and continue$/, async () => {
     await InfoPage.checkDisclosure();
     await InfoPage.completeFirstInsured(completeUser);
@@ -32,4 +37,14 @@ When(/^I enter an incomplete co insured and continue$/, async () => {
 When(/^I enter a complete primary insured$/, async () => {
     await InfoPage.checkDisclosure();
     await InfoPage.completeFirstInsured(completeUser);
+})
+
+When(/^I enter a complete primary mortgagee and continue$/, async () => {
+    await InfoPage.completePrimaryMortgagee(completePrimaryMortgagee);
+    await InfoPage.goToNextPage();
+})
+
+When(/^I enter an incomplete primary mortgagee and continue$/, async () => {
+    await InfoPage.completePrimaryMortgagee(incompletePrimaryMortgagee);
+    await InfoPage.clickOnContinue();
 })
