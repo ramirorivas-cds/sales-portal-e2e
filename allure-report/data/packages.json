@@ -1,0 +1,126 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy",
+    "children" : [ {
+      "name" : "Given I am on the home page",
+      "uid" : "4fb415e1170ce2b2",
+      "parentUid" : "6a392f3355eb8867106d5aaaa915ecc8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636990100910,
+        "stop" : 1636990103490,
+        "duration" : 2580
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.69" ]
+    }, {
+      "name" : "And I enter a green path address",
+      "uid" : "dde327eccd12553c",
+      "parentUid" : "6a392f3355eb8867106d5aaaa915ecc8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636990103490,
+        "stop" : 1636990125180,
+        "duration" : 21690
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.69" ]
+    }, {
+      "name" : "And I navigate to the coverage screen",
+      "uid" : "86de883aa41b603b",
+      "parentUid" : "6a392f3355eb8867106d5aaaa915ecc8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636990125180,
+        "stop" : 1636990135499,
+        "duration" : 10319
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.69" ]
+    }, {
+      "name" : "And I navigate to the info screen",
+      "uid" : "b2971c2504fe6a5d",
+      "parentUid" : "6a392f3355eb8867106d5aaaa915ecc8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636990135499,
+        "stop" : 1636990137384,
+        "duration" : 1885
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.69" ]
+    }, {
+      "name" : "And I enter a complete primary insured",
+      "uid" : "54f038c971d405e3",
+      "parentUid" : "6a392f3355eb8867106d5aaaa915ecc8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636990137384,
+        "stop" : 1636990138977,
+        "duration" : 1593
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.69" ]
+    }, {
+      "name" : "And I enter a complete primary mortgagee and continue",
+      "uid" : "b2de47795945e8e2",
+      "parentUid" : "6a392f3355eb8867106d5aaaa915ecc8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636990138977,
+        "stop" : 1636990158888,
+        "duration" : 19911
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.69" ]
+    }, {
+      "name" : "When I complete the checkout process for a mortgagee",
+      "uid" : "7ddbc1434c8121cb",
+      "parentUid" : "6a392f3355eb8867106d5aaaa915ecc8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636990158888,
+        "stop" : 1636990162299,
+        "duration" : 3411
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.69" ]
+    }, {
+      "name" : "Then I see the following elements in the success screen",
+      "uid" : "2691c0d44cf9753c",
+      "parentUid" : "6a392f3355eb8867106d5aaaa915ecc8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636990162300,
+        "stop" : 1636990172339,
+        "duration" : 10039
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.69" ]
+    }, {
+      "name" : "",
+      "uid" : "9435b4051d20c33e",
+      "parentUid" : "6a392f3355eb8867106d5aaaa915ecc8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636990172340,
+        "stop" : 1636990172340,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-95.0.4638.69" ]
+    } ],
+    "uid" : "6a392f3355eb8867106d5aaaa915ecc8"
+  } ]
+}

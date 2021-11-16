@@ -56,7 +56,7 @@ class CoveragePage extends Page {
     }
 
     async selectPriorLosses(hasPriorLosses = false) {
-        const priorLossOpt = hasPriorLosses ? await this.priorLossesYes : await this.priorLossesNo ;
+        const priorLossOpt = hasPriorLosses ? await this.priorLossesYes : await this.priorLossesNo;
         await priorLossOpt.waitForClick();
     } 
 

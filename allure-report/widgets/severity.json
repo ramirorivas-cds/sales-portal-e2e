@@ -1,0 +1,91 @@
+[ {
+  "uid" : "7ddbc1434c8121cb",
+  "name" : "When I complete the checkout process for a mortgagee",
+  "time" : {
+    "start" : 1636990158888,
+    "stop" : 1636990162299,
+    "duration" : 3411
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4fb415e1170ce2b2",
+  "name" : "Given I am on the home page",
+  "time" : {
+    "start" : 1636990100910,
+    "stop" : 1636990103490,
+    "duration" : 2580
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b2de47795945e8e2",
+  "name" : "And I enter a complete primary mortgagee and continue",
+  "time" : {
+    "start" : 1636990138977,
+    "stop" : 1636990158888,
+    "duration" : 19911
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "54f038c971d405e3",
+  "name" : "And I enter a complete primary insured",
+  "time" : {
+    "start" : 1636990137384,
+    "stop" : 1636990138977,
+    "duration" : 1593
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dde327eccd12553c",
+  "name" : "And I enter a green path address",
+  "time" : {
+    "start" : 1636990103490,
+    "stop" : 1636990125180,
+    "duration" : 21690
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9435b4051d20c33e",
+  "name" : "",
+  "time" : {
+    "start" : 1636990172340,
+    "stop" : 1636990172340,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2691c0d44cf9753c",
+  "name" : "Then I see the following elements in the success screen",
+  "time" : {
+    "start" : 1636990162300,
+    "stop" : 1636990172339,
+    "duration" : 10039
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b2971c2504fe6a5d",
+  "name" : "And I navigate to the info screen",
+  "time" : {
+    "start" : 1636990135499,
+    "stop" : 1636990137384,
+    "duration" : 1885
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "86de883aa41b603b",
+  "name" : "And I navigate to the coverage screen",
+  "time" : {
+    "start" : 1636990125180,
+    "stop" : 1636990135499,
+    "duration" : 10319
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

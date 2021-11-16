@@ -1,11 +1,9 @@
-
 exports.config = {
 
     //
     // ====================
     // Runner Configuration
     // ====================
-    //
     //
     // ==================
     // Specify Test Files
@@ -93,7 +91,7 @@ exports.config = {
     //
     // If you only want to run your tests until a specific amount of tests have failed use
     // bail (default is 0 - don't bail, run all tests).
-    bail: 0,
+    bail: 1,
     //
     // Set a base URL in order to shorten url command calls. If your `url` parameter starts
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
@@ -154,7 +152,12 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    reporters: 
+        [['allure', {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: true,
+    }]],
 
 
     //
@@ -254,8 +257,12 @@ exports.config = {
         }, true);
 
         browser.addCommand('waitForValueToChange', async function (timeout = 10000) {
-            await this.waitForDisplayed({ timeout })
+            // waits for the element to be displayed and save initial values 
+            await this.waitForDisplayed({ timeout });
             const initialVal = await this.getText();
+
+            /* waits until the new value (current value) 
+            is different to the first, it checks this condition every 500ms*/
             await this.waitUntil(async () => {
                 let currentVal = await this.getText();
                 return (currentVal != initialVal);

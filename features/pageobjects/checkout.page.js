@@ -1,6 +1,7 @@
 import Page from "./page";
 import { literals } from '../../utils/literals';
 import { enums } from "../../utils/enums";
+import { config } from "../../wdio.conf";
 
 const {
     checkoutPageUrl
@@ -40,7 +41,7 @@ class CheckoutPage extends Page {
     }
 
     async completeDisclosures() {
-        await this.sinkHoleExclusionCheck.waitForClick();
+        await this.sinkHoleExclusionCheck.waitForClick({timeout: config.timeout.XXL});
         await this.floodExclusionCheck.waitForClick();
         await this.applicationSignatureCheck.waitForClick();
     }
