@@ -4,23 +4,18 @@ import { enums } from '../../utils/enums';
 import { hasPriorLosses, isCoverageModalOpened } from '../../world';
 
 const {
-    salesCoverages
-} = enums.pagesIds;
+    pagesIds,
+    coverageType
+} = enums;
 
 const {
     coveragePageUrl
 } = literals.urls;
 
-const {
-    basic,
-    recommended,
-    luxury
-} = enums.coverageType
-
 class CoveragePage extends Page {
 
     constructor() {
-        super(salesCoverages, coveragePageUrl);
+        super(pagesIds.salesCoverages, coveragePageUrl);
     }
 
     // Prior losses section
@@ -60,16 +55,16 @@ class CoveragePage extends Page {
         await priorLossOpt.waitForClick();
     } 
 
-    async selectCoverageOption(option = recommended) {
+    async selectCoverageOption(option = coverageType.recommended) {
         let selected; 
         switch(option.toLowerCase()) {
-            case basic:
+            case coverageType.basic:
                 selected = await this.reviewBasicBtn;
                 break;
-            case recommended:
+            case coverageType.recommended:
                 selected = await this.reviewRecommendedBtn;
                 break;
-            case luxury:
+            case coverageType.luxury:
                 selected = await this.reviewLuxuryBtn;
                 break;
             default:

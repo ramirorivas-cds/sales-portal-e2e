@@ -7,13 +7,13 @@ const {
 } = literals.urls;
 
 const {
-    getStartedPage
-} = enums.pagesIds;
+    pagesIds
+} = enums;
 
 class GetStartedPage extends Page {
 
     constructor() {
-        super(getStartedPage,getStartedPageUrl);
+        super(pagesIds.getStartedPage,getStartedPageUrl);
     }
 
     getPageUrl() {

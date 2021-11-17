@@ -8,17 +8,14 @@ const {
 } = literals.urls;
 
 const {
-    salesInfo
-} = enums.pagesIds;
-
-const {
-    infoFormError
-} = enums.infoPageElements;
+    pagesIds,
+    infoPageElements
+} = enums;
 
 class InfoPage extends Page {
 
     constructor() {
-        super(salesInfo, infoPageUrl);
+        super(pagesIds.salesInfo, infoPageUrl);
     }
 
     get checkBox() { return $('#acceptConditionsInsuredCheckbox-container') }
@@ -118,7 +115,7 @@ class InfoPage extends Page {
       async elementSwitcher(element) {
         let selected;
         switch (element.toLowerCase()) {
-            case infoFormError:
+            case infoPageElements.infoFormError:
                 selected = await this.formError;
                 break;
             default:

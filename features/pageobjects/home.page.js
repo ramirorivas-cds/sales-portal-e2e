@@ -3,39 +3,22 @@ import { enums } from '../../utils/enums';
 import { literals } from '../../utils/literals'; 
 
 const {
-    redPath,
-    yellowPath,
-    greenPath
-} = enums.pathTypes;
+    salesSections,
+    pathTypes,
+    pagesIds
+} = enums;
 
 const {
-    aboutUsPage,
-    ourInsurancePage,
-    myAccountPage,
-    contactUsPage,
-    getStartedPage
-} = enums.salesSections;
-
-const {
-    redPathAddress,
-    greenPathAddress,
-    yellowPathAddress
-} = literals.addresses;
-
-const {
-    contactUs,
-    aboutUs,
-    ourInsurance,
-    getStarted
-} = literals.paths;
+    paths,
+    addresses
+} = literals
 
 const { homePageUrl } = literals.urls; 
 
 class HomePage extends Page {
 
-    //to-do: move literals to file 
     constructor() {
-        super('Sales Home Page',homePageUrl);
+        super(pagesIds.salesHomeId,homePageUrl);
     }
 
     getPageUrl() {
@@ -49,10 +32,10 @@ class HomePage extends Page {
     get getMyQuoteBtn() { return $('button[type="button"]') }
  
     //Nav Bar items 
-    get getStartedBtn()   { return $(`a[href="${getStarted}"]`) }
-    get ourInsuranceBtn() { return $(`a[href="${ourInsurance}"]`) }
-    get aboutUsBtn()      { return $(`a[href="${aboutUs}"]`) }
-    get contactUsBtn()    { return $(`a[href="${contactUs}"]`) }
+    get getStartedBtn()   { return $(`a[href="${paths.getStarted}"]`) }
+    get ourInsuranceBtn() { return $(`a[href="${paths.ourInsurance}"]`) }
+    get aboutUsBtn()      { return $(`a[href="${paths.aboutUs}"]`) }
+    get contactUsBtn()    { return $(`a[href="${paths.contactUs}"]`) }
     
     open () {
         return super.open('/');
@@ -61,14 +44,14 @@ class HomePage extends Page {
     async completeAddress(address){
         let val; 
         switch(address.toLowerCase()){
-            case redPath:
-                val = redPathAddress;
+            case pathTypes.redPath:
+                val = addresses.redPathAddress;
                 break;
-            case yellowPath:
-                val = yellowPathAddress;
+            case pathTypes.yellowPath:
+                val = addresses.yellowPathAddress;
                 break;
-            case greenPath:
-                val = greenPathAddress;
+            case pathTypes.greenPath:
+                val = addresses.greenPathAddress;
                 break;
             default:
                 throw new Error(`${address} is not a valid path`);
@@ -95,16 +78,16 @@ class HomePage extends Page {
     async goToSection(section) {
         let element;
         switch(section.toLowerCase()) {
-            case aboutUsPage:
+            case salesSections.aboutUsPage:
                 element = await this.aboutUsBtn;
                 break;
-            case getStartedPage:
+            case salesSections.getStartedPage:
                 element = await this.getStartedBtn;
                 break;
-            case ourInsurancePage:
+            case salesSections.ourInsurancePage:
                 element = await this.ourInsuranceBtn;
                 break;
-            case contactUsPage:
+            case salesSections.contactUsPage:
                 element = await this.contactUsBtn;
                 break;
             default:

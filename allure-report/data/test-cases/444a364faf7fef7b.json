@@ -1,0 +1,56 @@
+{
+  "uid" : "444a364faf7fef7b",
+  "name" : "",
+  "fullName" : "Rewards tests: As a user, If I exceed the non-rated rewards amount, the rewards I select don't affect the pemium.",
+  "historyId" : "51ba79a3604f651219c7beee67d05769",
+  "time" : {
+    "start" : 1637154753872,
+    "stop" : 1637154753874,
+    "duration" : 2
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-3"
+  }, {
+    "name" : "suite",
+    "value" : "Rewards tests: As a user, If I exceed the non-rated rewards amount, the rewards I select don't affect the pemium"
+  }, {
+    "name" : "testClass",
+    "value" : "Rewards tests: As a user, If I exceed the non-rated rewards amount, the rewards I select don't affect the pemium"
+  }, {
+    "name" : "testMethod",
+    "value" : ""
+  }, {
+    "name" : "package",
+    "value" : "Rewards tests: As a user, If I exceed the non-rated rewards amount, the rewards I select don't affect the pemium"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-95.0.4638.69"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "444a364faf7fef7b.json",
+  "parameterValues" : [ "chrome-95.0.4638.69" ]
+}

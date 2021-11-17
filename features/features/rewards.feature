@@ -126,7 +126,7 @@ Feature: Rewards tests
             | address    |
             | green path |
 
-    @Rewards008 @web @salesPortal 
+    @Rewards008 @web @salesPortal
     Scenario Outline: As a user, If I exceed the non-rated rewards amount, the rewards I select don't affect the pemium
         Given I am on the home page
         And I enter a <address> address

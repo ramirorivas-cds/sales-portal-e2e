@@ -1,0 +1,58 @@
+{
+  "uid" : "991881583e3aa470",
+  "name" : "And I enter a green path address",
+  "fullName" : "Rewards tests: As a user, If I exceed the non-rated rewards amount, the rewards I select don't affect the pemium.And I enter a green path address",
+  "historyId" : "97497d0f5943a85cb4e40d0951d8ef63",
+  "time" : {
+    "start" : 1637154756540,
+    "stop" : 1637154779001,
+    "duration" : 22461
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-3"
+  }, {
+    "name" : "suite",
+    "value" : "Rewards tests: As a user, If I exceed the non-rated rewards amount, the rewards I select don't affect the pemium"
+  }, {
+    "name" : "testClass",
+    "value" : "Rewards tests: As a user, If I exceed the non-rated rewards amount, the rewards I select don't affect the pemium"
+  }, {
+    "name" : "testMethod",
+    "value" : "And I enter a green path address"
+  }, {
+    "name" : "package",
+    "value" : "Rewards tests: As a user, If I exceed the non-rated rewards amount, the rewards I select don't affect the pemium"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-95.0.4638.69"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "991881583e3aa470.json",
+  "parameterValues" : [ "chrome-95.0.4638.69" ]
+}

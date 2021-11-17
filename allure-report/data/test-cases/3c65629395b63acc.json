@@ -1,0 +1,56 @@
+{
+  "uid" : "3c65629395b63acc",
+  "name" : "And I enter a complete primary insured",
+  "fullName" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy.And I enter a complete primary insured",
+  "historyId" : "5576a20d42e10abe0fd8f0df0e779ac3",
+  "time" : {
+    "start" : 1636989983034,
+    "stop" : 1636989984620,
+    "duration" : 1586
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy"
+  }, {
+    "name" : "testClass",
+    "value" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy"
+  }, {
+    "name" : "testMethod",
+    "value" : "And I enter a complete primary insured"
+  }, {
+    "name" : "package",
+    "value" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-95.0.4638.69"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3c65629395b63acc.json",
+  "parameterValues" : [ "chrome-95.0.4638.69" ]
+}

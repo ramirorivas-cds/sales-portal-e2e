@@ -4,23 +4,18 @@ import { enums } from "../../utils/enums";
 import { config } from "../../wdio.conf";
 
 const {
+    pagesIds,
+    paymentType
+} = enums;
+
+const {
     checkoutPageUrl
 } = literals.urls;
-
-const {
-    salesCheckout
-} = enums.pagesIds;
-
-const {
-    mortgagee,
-    fullPay,
-    elevenPay
-} =enums.paymentType;
 
 class CheckoutPage extends Page {
 
     constructor() {
-        super(salesCheckout,checkoutPageUrl);
+        super(pagesIds.salesCheckout,checkoutPageUrl);
     }
 
     get sinkHoleExclusionCheck()    { return $('#sinkholeExclusionCheckbox-container div.sinkholeExclusionCheckbox')}
@@ -52,14 +47,14 @@ class CheckoutPage extends Page {
         await this.saveSignature.waitForClick();
     }
 
-    async choosePaymentType(paymentType){
+    async choosePaymentType(chosenPaymentType){
         let payment;
-        switch(paymentType.toLowerCase()) {
-            case mortgagee:
+        switch(chosenPaymentType.toLowerCase()) {
+            case paymentType.mortgagee:
                 payment = await this.paymentMortgagee;
                 break;
             default:
-                throw new Error(`${paymentType} is not a valid payment type`);
+                throw new Error(`${chosenPaymentType} is not a valid payment type`);
         }
         await payment.waitForClick();
     }
