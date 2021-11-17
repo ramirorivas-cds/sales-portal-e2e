@@ -1,0 +1,58 @@
+{
+  "uid" : "7a496a1ecdb50d6a",
+  "name" : "Then I see my premium quote remains the same",
+  "fullName" : "Rewards tests: As a user, If I exceed the non-rated rewards amount, the rewards I select don't affect the pemium.Then I see my premium quote remains the same",
+  "historyId" : "179a3d21c3c96693ab8fc8c45fd5fab6",
+  "time" : {
+    "start" : 1637154808640,
+    "stop" : 1637154808663,
+    "duration" : 23
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-3"
+  }, {
+    "name" : "suite",
+    "value" : "Rewards tests: As a user, If I exceed the non-rated rewards amount, the rewards I select don't affect the pemium"
+  }, {
+    "name" : "testClass",
+    "value" : "Rewards tests: As a user, If I exceed the non-rated rewards amount, the rewards I select don't affect the pemium"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then I see my premium quote remains the same"
+  }, {
+    "name" : "package",
+    "value" : "Rewards tests: As a user, If I exceed the non-rated rewards amount, the rewards I select don't affect the pemium"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-95.0.4638.69"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7a496a1ecdb50d6a.json",
+  "parameterValues" : [ "chrome-95.0.4638.69" ]
+}

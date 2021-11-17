@@ -9,17 +9,14 @@ const {
 } = literals.urls;
 
 const {
-    salesSuccess
-} = enums.pagesIds;
-
-const {
-    nextStepsButton
-} = enums.successElements;
+    pagesIds,
+    successElements,
+} = enums;
 
 class CheckoutPage extends Page {
 
     constructor() {
-        super(salesSuccess,successPageUrl);
+        super(pagesIds.salesSuccess,successPageUrl);
     }
 
     get nextSteps() { return $('#activateAccountNextStepBoxButton')}
@@ -36,7 +33,7 @@ class CheckoutPage extends Page {
           async elementSwitcher(element) {
             let selected;
             switch (element.toLowerCase()) {
-                case nextStepsButton:
+                case successElements.nextStepsButton:
                     selected = await this.nextSteps;
                     break;
                 default:

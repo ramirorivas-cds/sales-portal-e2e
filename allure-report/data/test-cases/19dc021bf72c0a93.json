@@ -1,0 +1,115 @@
+{
+  "uid" : "19dc021bf72c0a93",
+  "name" : "And I navigate to the info screen",
+  "fullName" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy.And I navigate to the info screen",
+  "historyId" : "504fd256fc4e8ca82227b736c471e80c",
+  "time" : {
+    "start" : 1637154790273,
+    "stop" : 1637154792278,
+    "duration" : 2005
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy"
+  }, {
+    "name" : "testClass",
+    "value" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy"
+  }, {
+    "name" : "testMethod",
+    "value" : "And I navigate to the info screen"
+  }, {
+    "name" : "package",
+    "value" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-95.0.4638.69"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "772ee286df2b7532",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637154215850,
+        "stop" : 1637154217819,
+        "duration" : 1969
+      }
+    }, {
+      "uid" : "5800c5a1cecddbb8",
+      "status" : "broken",
+      "statusDetails" : "ReferenceError: recommended is not defined",
+      "time" : {
+        "start" : 1637153970694,
+        "stop" : 1637153972002,
+        "duration" : 1308
+      }
+    }, {
+      "uid" : "9aff9d143c838833",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637089461785,
+        "stop" : 1637089463503,
+        "duration" : 1718
+      }
+    }, {
+      "uid" : "a25f2700f6cc5f4e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637089368888,
+        "stop" : 1637089371492,
+        "duration" : 2604
+      }
+    }, {
+      "uid" : "15cda3ff27a78bc4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636990135499,
+        "stop" : 1636990137384,
+        "duration" : 1885
+      }
+    }, {
+      "uid" : "4065dd4f1155f0ba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636989981103,
+        "stop" : 1636989983034,
+        "duration" : 1931
+      }
+    }, {
+      "uid" : "1b07b36735c1f1a5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636970516901,
+        "stop" : 1636970518623,
+        "duration" : 1722
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "19dc021bf72c0a93.json",
+  "parameterValues" : [ "chrome-95.0.4638.69" ]
+}

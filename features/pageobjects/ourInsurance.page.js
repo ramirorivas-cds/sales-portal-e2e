@@ -7,13 +7,13 @@ const {
 } = literals.urls;
 
 const {
-    ourInsurancePage
-} = enums.pagesIds;
+    pagesIds,
+} = enums;
 
 class OurInsurancePage extends Page {
 
     constructor() {
-        super(ourInsurancePage,ourInsurancePageUrl);
+        super(pagesIds.ourInsurancePage,ourInsurancePageUrl);
     }
 
     getPageUrl() {

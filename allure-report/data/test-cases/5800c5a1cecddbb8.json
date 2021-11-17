@@ -1,0 +1,58 @@
+{
+  "uid" : "5800c5a1cecddbb8",
+  "name" : "And I navigate to the info screen",
+  "fullName" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy.And I navigate to the info screen",
+  "historyId" : "504fd256fc4e8ca82227b736c471e80c",
+  "time" : {
+    "start" : 1637153970694,
+    "stop" : 1637153972002,
+    "duration" : 1308
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "ReferenceError: recommended is not defined",
+  "statusTrace" : "ReferenceError: recommended is not defined\n                    at CoveragePage.selectCoverageOption (/Users/ramirorivas/Desktop/sales-automation/features/pageobjects/coverage.page.js:58:41)\n                    at CoveragePage.goToNextPage (/Users/ramirorivas/Desktop/sales-automation/features/pageobjects/coverage.page.js:79:24)\n                    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n                    at World.<anonymous> (/Users/ramirorivas/Desktop/sales-automation/features/step-definitions/coveragePage.steps.js:5:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy"
+  }, {
+    "name" : "testClass",
+    "value" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy"
+  }, {
+    "name" : "testMethod",
+    "value" : "And I navigate to the info screen"
+  }, {
+    "name" : "package",
+    "value" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-95.0.4638.69"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5800c5a1cecddbb8.json",
+  "parameterValues" : [ "chrome-95.0.4638.69" ]
+}

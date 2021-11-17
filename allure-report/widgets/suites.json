@@ -1,0 +1,26 @@
+{
+  "total" : 2,
+  "items" : [ {
+    "uid" : "1bb13e5b457df8a4d633fa10b64178eb",
+    "name" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
+    "uid" : "a3f7a70df5b0e0297493fdc96920e817",
+    "name" : "Rewards tests: As a user, If I exceed the non-rated rewards amount, the rewards I select don't affect the pemium",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 6
+    }
+  } ]
+}

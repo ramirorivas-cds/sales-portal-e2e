@@ -1,14 +1,19 @@
 import Page from './page';
 import { literals } from '../../utils/literals';
+import { enums } from '../../utils/enums';
 
 const {
     kikoutPageUrl
 } = literals.urls;
 
+const {
+    pagesIds,
+} = enums;
+
 class KikoutPage extends Page {
 
     constructor() {
-        super('Kickout Page',kikoutPageUrl);
+        super(pagesIds.salesKikout,kikoutPageUrl);
     }
 
     getPageUrl(){

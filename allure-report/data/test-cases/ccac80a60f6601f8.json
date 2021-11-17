@@ -1,0 +1,178 @@
+{
+  "uid" : "ccac80a60f6601f8",
+  "name" : "",
+  "fullName" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy.",
+  "historyId" : "2504d906cf77f765de9f8975f98298b7",
+  "time" : {
+    "start" : 1637154832712,
+    "stop" : 1637154832713,
+    "duration" : 1
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy"
+  }, {
+    "name" : "testClass",
+    "value" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy"
+  }, {
+    "name" : "testMethod",
+    "value" : ""
+  }, {
+    "name" : "package",
+    "value" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-95.0.4638.69"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "b3d83a35a1bd700d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637154753952,
+        "stop" : 1637154753954,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "84efca89a99f4a99",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637154258045,
+        "stop" : 1637154258045,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ce3ebebc87de205c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637154184255,
+        "stop" : 1637154184257,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f28ea4f9d7f37ba5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637153972003,
+        "stop" : 1637153972003,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "5e93d18b29de20df",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637153932138,
+        "stop" : 1637153932140,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "da5c1eb3696112a7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637089494481,
+        "stop" : 1637089494482,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b183b529cc6c2676",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637089430448,
+        "stop" : 1637089430450,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c47047847307e443",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637089408310,
+        "stop" : 1637089408310,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "576f47fd3df333f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637089335369,
+        "stop" : 1637089335371,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9d943264be5dddce",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636990172340,
+        "stop" : 1636990172340,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "56c3d3304a9f76c3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636990100908,
+        "stop" : 1636990100910,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "61048af28cc9150",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636990022333,
+        "stop" : 1636990022333,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3918b4a94cfa8891",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636989946729,
+        "stop" : 1636989946731,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "faef3f73055977a5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636970557220,
+        "stop" : 1636970557220,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "66152bced59177df",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636970482954,
+        "stop" : 1636970482956,
+        "duration" : 2
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ccac80a60f6601f8.json",
+  "parameterValues" : [ "chrome-95.0.4638.69" ]
+}

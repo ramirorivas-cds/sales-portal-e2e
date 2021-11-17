@@ -4,63 +4,21 @@ import { enums } from '../../utils/enums';
 import { isTrueSet } from '../../utils/helpers';
 
 const {
-    salesReward
-} = enums.pagesIds;
+    pagesIds,
+    creditScoreLimits,
+    rewardsLimits,
+    ratedRewards,
+    nonRatedRewards
+} = enums;
 
 const {
     rewardPageUrl
 } = literals.urls;
 
-const {
-    highest,
-    lowest
-} = enums.creditScoreLimits
-
-const {
-    nonRatedIndex,
-    nonRatedLimit
-} = enums.rewardsLimits
-
-const {
-    burglarAalarm,
-    fireProtection,
-    tanklessWaterHeater,
-    waterDetectionShutoff,
-    accreditedBuilder,
-    overAgeSixty,
-    securedCommunity,
-    surgeProtection,
-    nonSmoker,
-    openingProtection,
-    military
-} = enums.ratedRewards;
-
-const {
-    videoDoorBell,
-    highAcSeerRating,
-    fireExtinguisher,
-    smartDevices,
-    smartLock,
-    smartThermostat,
-    solarPanel,
-    pestControl,
-    hoaMember,
-    safeDriver,
-    organDonor,
-    bloodDonor,
-    gymMember,
-    idTheftProtection,
-    wholeHouse,
-    homeWarranty,
-    purchasedLifeInsurance,
-    petOwner,
-    rewardModal
-} = enums.nonRatedRewards
-
 class RewardPage extends Page {
 
     constructor() {
-        super(salesReward, rewardPageUrl);
+        super(pagesIds.salesReward, rewardPageUrl);
     }
 
     // Credit score
@@ -129,10 +87,10 @@ class RewardPage extends Page {
     creditScoreMapper(score) {
         let creditScore;
         switch (score.toLowerCase()) {
-            case highest:
+            case creditScoreLimits.highest:
                 creditScore = 230;
                 break;
-            case lowest:
+            case creditScoreLimits.lowest:
                 creditScore = -500;
                 break;
             default:
@@ -158,94 +116,94 @@ class RewardPage extends Page {
     async elementSwitcher(element) {
         let selected;
         switch (element.toLowerCase()) {
-            case burglarAalarm:
+            case ratedRewards.burglarAalarm:
                 selected = await this.burglarAlarmRwd;
                 break;
-            case fireProtection:
+            case ratedRewards.fireProtection:
                 selected = await this.fireProtectionRwd;
                 break;
-            case tanklessWaterHeater:
+            case ratedRewards.tanklessWaterHeater:
                 selected = await this.tanklessWaterHeaterRwd;
                 break;
-            case military:
+            case ratedRewards.military:
                 selected = await this.militaryRwd;
                 break;
-            case waterDetectionShutoff:
+            case ratedRewards.waterDetectionShutoff:
                 selected = await this.waterDetectionRwd;
                 break;
-            case accreditedBuilder:
+            case ratedRewards.accreditedBuilder:
                 selected = await this.accreditedBuilderRwd;
                 break;
-            case overAgeSixty:
+            case ratedRewards.ageOverSixtyRwd:
                 selected = await this.ageOverSixtyRwd;
                 break;
-            case securedCommunity:
+            case ratedRewards.securedCommunity:
                 selected = await this.securedCommunityRwd;
                 break;
-            case surgeProtection:
+            case ratedRewards.surgeProtection:
                 selected = await this.surgeProtectionRwd;
                 break;
-            case nonSmoker:
+            case ratedRewards.nonSmoker:
                 selected = await this.nonSmokerRwd;
                 break;
-            case openingProtection:
+            case ratedRewards.openingProtection:
                 selected = await this.hurricaneRwd;
                 break;
-            case videoDoorBell:
+            case nonRatedRewards.videoDoorBell:
                 selected = await this.videoDoorBellRwd;
                 break;
-            case highAcSeerRating:
+            case nonRatedRewards.highAcSeerRating:
                 selected = await this.highAcSeerRatingRwd;
                 break;
-            case fireExtinguisher:
+            case nonRatedRewards.fireExtinguisher:
                 selected = await this.fireExtinguisherRwd;
                 break;
-            case smartLock:
+            case nonRatedRewards.smartLock:
                 selected = await this.smartLockRwd;
                 break;
-            case solarPanel:
+            case nonRatedRewards.solarPanel:
                 selected = await this.solarPanelsRwd;
                 break;
-            case pestControl:
+            case nonRatedRewards.pestControl:
                 selected = await this.pestControlRwd;
                 break;
-            case homeWarranty:
+            case nonRatedRewards.homeWarranty:
                 selected = await this.homeWarrantyRwd;
                 break;
-            case wholeHouse:
+            case nonRatedRewards.wholeHouse:
                 selected = await this.wholeHouseRwd;
                 break;
-            case hoaMember:
+            case nonRatedRewards.hoaMember:
                 selected = await this.hoaRwd;
                 break;
-            case safeDriver:
+            case nonRatedRewards.safeDriver:
                 selected = await this.safeDriverRwd;
                 break;
-            case purchasedLifeInsurance:
+            case nonRatedRewards.purchasedLifeInsurance:
                 selected = await this.purchasedInsuranceRwd;
                 break;
-            case petOwner:
+            case nonRatedRewards.petOwner:
                 selected = await this.petRwd;
                 break;
-            case idTheftProtection:
+            case nonRatedRewards.idTheftProtection:
                 selected = await this.idTheftProtectionRwd;
                 break;
-            case organDonor:
+            case nonRatedRewards.organDonor:
                 selected = await this.organDonorRwd;
                 break;
-            case smartThermostat:
+            case nonRatedRewards.smartThermostat:
                 selected = await this.smartLockRwd;
                 break;
-            case bloodDonor:
+            case nonRatedRewards.bloodDonor:
                 selected = await this.bloodDonorRwd;
                 break;
-            case gymMember:
+            case nonRatedRewards.gymMember:
                 selected = await this.gymMemberRwd;
                 break;
-            case smartDevices:
+            case nonRatedRewards.smartDevices:
                 selected = await this.smartDevicesRwd;
                 break;
-            case rewardModal:
+            case nonRatedRewards.rewardModal:
                 selected = await this.rewardsModal;
                 break;
             default:
@@ -254,7 +212,7 @@ class RewardPage extends Page {
         return selected;
     }
 
-    async selectReward(reward) { //TO-DO: export browser.execute function to custom commands
+    async selectReward(reward) { 
         let selectedReward = await this.elementSwitcher(reward); 
         await selectedReward.scrollIntoView(true); 
         await browser.execute(async (element) => { 
@@ -267,9 +225,9 @@ class RewardPage extends Page {
     }
 
     async selectRewardUntil(){
-        let i = nonRatedIndex;
+        let i = rewardsLimits.nonRatedIndex;
         await this.quoteValue.waitForDisplayed();
-        while((await super.getSavingsValue()) < nonRatedLimit) {
+        while((await super.getSavingsValue()) < rewardsLimits.nonRatedLimit) {
             await this.rewards[i].waitForClick();
             await this.waitForQuoteToChange();  
             i++;  

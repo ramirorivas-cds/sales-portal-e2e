@@ -1,0 +1,151 @@
+[ {
+  "uid" : "ad2b1aa191dd047f",
+  "name" : "And I enter a complete primary insured",
+  "time" : {
+    "start" : 1637154792278,
+    "stop" : 1637154793938,
+    "duration" : 1660
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b4b9bac7cb24adc5",
+  "name" : "When I complete the checkout process for a mortgagee",
+  "time" : {
+    "start" : 1637154809741,
+    "stop" : 1637154817178,
+    "duration" : 7437
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ebde721804469e42",
+  "name" : "And I navigate to the coverage screen",
+  "time" : {
+    "start" : 1637154779710,
+    "stop" : 1637154790273,
+    "duration" : 10563
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ddebf0075aa0e284",
+  "name" : "",
+  "time" : {
+    "start" : 1637154808663,
+    "stop" : 1637154808663,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "19dc021bf72c0a93",
+  "name" : "And I navigate to the info screen",
+  "time" : {
+    "start" : 1637154790273,
+    "stop" : 1637154792278,
+    "duration" : 2005
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "73179a7f956d8507",
+  "name" : "And I enter a green path address",
+  "time" : {
+    "start" : 1637154756834,
+    "stop" : 1637154779710,
+    "duration" : 22876
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "991881583e3aa470",
+  "name" : "And I enter a green path address",
+  "time" : {
+    "start" : 1637154756540,
+    "stop" : 1637154779001,
+    "duration" : 22461
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "104258efdfaffeca",
+  "name" : "And I enter a complete primary mortgagee and continue",
+  "time" : {
+    "start" : 1637154793938,
+    "stop" : 1637154809741,
+    "duration" : 15803
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a211fed068bab9b3",
+  "name" : "And I select 100 dollars in non rated rewards and close the modal",
+  "time" : {
+    "start" : 1637154779001,
+    "stop" : 1637154808322,
+    "duration" : 29321
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ccac80a60f6601f8",
+  "name" : "",
+  "time" : {
+    "start" : 1637154832712,
+    "stop" : 1637154832713,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6c2a16c03813ff15",
+  "name" : "Then I see the following elements in the success screen",
+  "time" : {
+    "start" : 1637154817178,
+    "stop" : 1637154832712,
+    "duration" : 15534
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7d86265947b4fe88",
+  "name" : "When I select the following rewards",
+  "time" : {
+    "start" : 1637154808322,
+    "stop" : 1637154808640,
+    "duration" : 318
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4c6278fbb960d548",
+  "name" : "Given I am on the home page",
+  "time" : {
+    "start" : 1637154753954,
+    "stop" : 1637154756834,
+    "duration" : 2880
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a43ab4bb774e1042",
+  "name" : "Given I am on the home page",
+  "time" : {
+    "start" : 1637154753874,
+    "stop" : 1637154756540,
+    "duration" : 2666
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7a496a1ecdb50d6a",
+  "name" : "Then I see my premium quote remains the same",
+  "time" : {
+    "start" : 1637154808640,
+    "stop" : 1637154808663,
+    "duration" : 23
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
