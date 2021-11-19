@@ -1,0 +1,161 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1637246038448' stop='1637246074793'>
+    <name>Home Page Tests: As a user, I can purchase a mortgagee billed policy</name>
+    <title>Home Page Tests: As a user, I can purchase a mortgagee billed policy</title>
+    <test-cases>
+        <test-case start='1637246038449' status='passed' stop='1637246038451'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-95.0.4638.69'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1637246038451' status='passed' stop='1637246041468'>
+            <name>Given I am on the home page</name>
+            <title>Given I am on the home page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-95.0.4638.69'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1637246041468' status='passed' stop='1637246061072'>
+            <name>And I enter a green path address</name>
+            <title>And I enter a green path address</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-95.0.4638.69'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1637246061072' status='broken' stop='1637246074792'>
+            <name>And I navigate to the coverage screen</name>
+            <title>And I navigate to the coverage screen</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-95.0.4638.69'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: element ("#nextQuoteWi") still not clickable after 10000ms</message>
+                <stack-trace>Error: element ("#nextQuoteWi") still not clickable after 10000ms
+                    at /Users/ramirorivas/Desktop/sales-automation/node_modules/webdriverio/build/commands/browser/waitUntil.js:66:23
+                    at Element.wrapCommandFn (/Users/ramirorivas/Desktop/sales-automation/node_modules/@wdio/utils/build/shim.js:131:29)
+                    at Element.elementErrorHandlerCallbackFn (/Users/ramirorivas/Desktop/sales-automation/node_modules/webdriverio/build/middlewares.js:24:32)
+                    at Element.wrapCommandFn (/Users/ramirorivas/Desktop/sales-automation/node_modules/@wdio/utils/build/shim.js:131:29)
+                    at Element.wrapCommandFn (/Users/ramirorivas/Desktop/sales-automation/node_modules/@wdio/utils/build/shim.js:131:29)
+                    at Element.elementErrorHandlerCallbackFn (/Users/ramirorivas/Desktop/sales-automation/node_modules/webdriverio/build/middlewares.js:24:32)
+                    at Element.wrapCommandFn (/Users/ramirorivas/Desktop/sales-automation/node_modules/@wdio/utils/build/shim.js:131:29)
+                    at Element.&lt;anonymous> (/Users/ramirorivas/Desktop/sales-automation/wdio.conf.js:242:13)
+                    at Element.wrapCommandFn (/Users/ramirorivas/Desktop/sales-automation/node_modules/@wdio/utils/build/shim.js:131:29)
+                    at Element.wrapCommandFn (/Users/ramirorivas/Desktop/sales-automation/node_modules/@wdio/utils/build/shim.js:131:29)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1637246074792' status='pending' stop='1637246074792'>
+            <name>And I navigate to the info screen</name>
+            <title>And I navigate to the info screen</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-95.0.4638.69'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1637246074792' status='pending' stop='1637246074792'>
+            <name>And I enter a complete primary insured</name>
+            <title>And I enter a complete primary insured</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-95.0.4638.69'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1637246074792' status='pending' stop='1637246074792'>
+            <name>And I enter a complete primary mortgagee and continue</name>
+            <title>And I enter a complete primary mortgagee and continue</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-95.0.4638.69'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1637246074792' status='pending' stop='1637246074792'>
+            <name>When I complete the checkout process for a mortgagee</name>
+            <title>When I complete the checkout process for a mortgagee</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-95.0.4638.69'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1637246074793' status='pending' stop='1637246074793'>
+            <name>Then I see the following elements in the success screen</name>
+            <title>Then I see the following elements in the success screen</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-95.0.4638.69'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1637246074793' status='passed' stop='1637246074793'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-95.0.4638.69'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

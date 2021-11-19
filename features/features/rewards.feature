@@ -2,7 +2,7 @@ Feature: Rewards tests
 
     Test that aim to test reward screen scenarios
 
-    @Rewards001 @web @salesPortal
+    @Rewards001 @web @salesPortal 
     Scenario Outline: As a user, I can see the rated rewards
 
         Given I am on the home page
@@ -95,7 +95,7 @@ Feature: Rewards tests
             | address    | action    |
             | green path | decreases |
 
-    @Rewards006 @web @salesPortal
+    @Rewards006 @web @salesPortal 
     Scenario Outline: As a user, if I select more than $100 in non-rated rewards I see a modal
         Given I am on the home page
         And I enter a <address> address

@@ -25,7 +25,7 @@ class InfoPage extends Page {
     get insuredLastName()  { return $$('#lastName')[0] }
     get insuredEmail()     { return $$('#email')[0] }
     get insuredPhone()     { return $$('#phoneNumber')[0] }
-    get insuredBirthday()  { return $$('#dateOfBirth')[0] }
+    get insuredBirthday()  { return $$('#dateOfBirth ')[0] }
 
     // Co-insured 
     get coApplicantCheck()     { return $('#coApplicant-commonYesRadioQuestionCheckbox-container div')}
@@ -38,14 +38,14 @@ class InfoPage extends Page {
 
     // Mortgagee
 
-    get mortgageeBtn() { return $('#addMortgageeFormButton')}
+    get mortgageeBtn()        { return $('#addMortgageeFormButton')}
     get primaryCompanyName()  { return $$('#bank_name')[0]}
-    get primaryLoanNumber() { return $$('#loan_number')[0]}
-    get primaryAddress()    { return $$('input#address')[1]}
-    get primaryCity()       { return $('input#city')}
-    get primaryState()      { return $$('#state[role="button"]')[0]}
-    get primaryPostal()     { return $$('input#postalCode')[0]}
-    get primaryType()       { return $$('#mortgageeType')[0]}
+    get primaryLoanNumber()   { return $$('#loan_number')[0]}
+    get primaryAddress()      { return $$('input#address')[1]}
+    get primaryCity()         { return $('input#city')}
+    get primaryState()        { return $$('#state[role="button"]')[0]}
+    get primaryPostal()       { return $$('input#postalCode')[0]}
+    get primaryType()         { return $$('#mortgageeType')[0]}
 
     // Validation error 
     get formError() { return $$('p + p')[5]}

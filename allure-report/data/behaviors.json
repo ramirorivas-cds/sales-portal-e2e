@@ -3,155 +3,77 @@
   "name" : "behaviors",
   "children" : [ {
     "name" : "Given I am on the home page",
-    "uid" : "a43ab4bb774e1042",
+    "uid" : "e0fc6b704d9ece87",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1637154753874,
-      "stop" : 1637154756540,
-      "duration" : 2666
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "chrome-95.0.4638.69" ]
-  }, {
-    "name" : "Given I am on the home page",
-    "uid" : "4c6278fbb960d548",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1637154753954,
-      "stop" : 1637154756834,
-      "duration" : 2880
+      "start" : 1637246038451,
+      "stop" : 1637246041468,
+      "duration" : 3017
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "chrome-95.0.4638.69" ]
   }, {
     "name" : "And I enter a green path address",
-    "uid" : "991881583e3aa470",
+    "uid" : "f4c19c864a1df58e",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1637154756540,
-      "stop" : 1637154779001,
-      "duration" : 22461
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "chrome-95.0.4638.69" ]
-  }, {
-    "name" : "And I enter a green path address",
-    "uid" : "73179a7f956d8507",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1637154756834,
-      "stop" : 1637154779710,
-      "duration" : 22876
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "chrome-95.0.4638.69" ]
-  }, {
-    "name" : "And I select 100 dollars in non rated rewards and close the modal",
-    "uid" : "a211fed068bab9b3",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1637154779001,
-      "stop" : 1637154808322,
-      "duration" : 29321
+      "start" : 1637246041468,
+      "stop" : 1637246061072,
+      "duration" : 19604
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "chrome-95.0.4638.69" ]
   }, {
     "name" : "And I navigate to the coverage screen",
-    "uid" : "ebde721804469e42",
+    "uid" : "3c938014822c142d",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
+    "status" : "broken",
     "time" : {
-      "start" : 1637154779710,
-      "stop" : 1637154790273,
-      "duration" : 10563
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "chrome-95.0.4638.69" ]
-  }, {
-    "name" : "And I navigate to the info screen",
-    "uid" : "19dc021bf72c0a93",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1637154790273,
-      "stop" : 1637154792278,
-      "duration" : 2005
+      "start" : 1637246061072,
+      "stop" : 1637246074792,
+      "duration" : 13720
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "chrome-95.0.4638.69" ]
   }, {
     "name" : "And I enter a complete primary insured",
-    "uid" : "ad2b1aa191dd047f",
+    "uid" : "8861de690ce02bac",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1637154792278,
-      "stop" : 1637154793938,
-      "duration" : 1660
+      "start" : 1637246074792,
+      "stop" : 1637246074792,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome-95.0.4638.69" ]
+  }, {
+    "name" : "And I navigate to the info screen",
+    "uid" : "49495dfb8d90af45",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1637246074792,
+      "stop" : 1637246074792,
+      "duration" : 0
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "chrome-95.0.4638.69" ]
   }, {
     "name" : "And I enter a complete primary mortgagee and continue",
-    "uid" : "104258efdfaffeca",
+    "uid" : "1ba19bb0bc7cf585",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1637154793938,
-      "stop" : 1637154809741,
-      "duration" : 15803
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "chrome-95.0.4638.69" ]
-  }, {
-    "name" : "When I select the following rewards",
-    "uid" : "7d86265947b4fe88",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1637154808322,
-      "stop" : 1637154808640,
-      "duration" : 318
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "chrome-95.0.4638.69" ]
-  }, {
-    "name" : "Then I see my premium quote remains the same",
-    "uid" : "7a496a1ecdb50d6a",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1637154808640,
-      "stop" : 1637154808663,
-      "duration" : 23
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "chrome-95.0.4638.69" ]
-  }, {
-    "name" : "",
-    "uid" : "ddebf0075aa0e284",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1637154808663,
-      "stop" : 1637154808663,
+      "start" : 1637246074792,
+      "stop" : 1637246074792,
       "duration" : 0
     },
     "flaky" : false,
@@ -159,39 +81,39 @@
     "parameters" : [ "chrome-95.0.4638.69" ]
   }, {
     "name" : "When I complete the checkout process for a mortgagee",
-    "uid" : "b4b9bac7cb24adc5",
+    "uid" : "d13de20c22a98fff",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1637154809741,
-      "stop" : 1637154817178,
-      "duration" : 7437
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "chrome-95.0.4638.69" ]
-  }, {
-    "name" : "Then I see the following elements in the success screen",
-    "uid" : "6c2a16c03813ff15",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1637154817178,
-      "stop" : 1637154832712,
-      "duration" : 15534
+      "start" : 1637246074792,
+      "stop" : 1637246074792,
+      "duration" : 0
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "chrome-95.0.4638.69" ]
   }, {
     "name" : "",
-    "uid" : "ccac80a60f6601f8",
+    "uid" : "37555edcc08633e2",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1637154832712,
-      "stop" : 1637154832713,
-      "duration" : 1
+      "start" : 1637246074793,
+      "stop" : 1637246074793,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome-95.0.4638.69" ]
+  }, {
+    "name" : "Then I see the following elements in the success screen",
+    "uid" : "e96d2a8ac6fd802c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1637246074793,
+      "stop" : 1637246074793,
+      "duration" : 0
     },
     "flaky" : false,
     "newFailed" : false,

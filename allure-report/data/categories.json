@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Error: element (\"#nextQuoteWi\") still not clickable after 10000ms",
+      "children" : [ {
+        "name" : "And I navigate to the coverage screen",
+        "uid" : "3c938014822c142d",
+        "parentUid" : "c7cc588a291fdc0680b55becc74d1c8f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1637246061072,
+          "stop" : 1637246074792,
+          "duration" : 13720
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome-95.0.4638.69" ]
+      } ],
+      "uid" : "c7cc588a291fdc0680b55becc74d1c8f"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }

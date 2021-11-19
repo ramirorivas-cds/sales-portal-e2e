@@ -1,0 +1,66 @@
+{
+  "uid" : "f4c19c864a1df58e",
+  "name" : "And I enter a green path address",
+  "fullName" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy.And I enter a green path address",
+  "historyId" : "f34098235b0cf42c6dea68d052d17e23",
+  "time" : {
+    "start" : 1637246041468,
+    "stop" : 1637246061072,
+    "duration" : 19604
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy"
+  }, {
+    "name" : "testClass",
+    "value" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy"
+  }, {
+    "name" : "testMethod",
+    "value" : "And I enter a green path address"
+  }, {
+    "name" : "package",
+    "value" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-95.0.4638.69"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "bd2762a7c692cd1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637244638806,
+        "stop" : 1637244659037,
+        "duration" : 20231
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f4c19c864a1df58e.json",
+  "parameterValues" : [ "chrome-95.0.4638.69" ]
+}

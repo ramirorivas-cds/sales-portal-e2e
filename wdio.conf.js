@@ -64,6 +64,9 @@ exports.config = {
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
     },
+    // {
+    //     browserName: 'firefox'
+    // }
 ],
     //
     // ===================
@@ -269,7 +272,7 @@ exports.config = {
             }, { timeout, interval: 500 });
         }, true);
 
-        browser.addCommand('clickAndSetVal', async function (value, timeout = 10000, reverse = false) {
+        browser.addCommand('clickAndSetVal', async function (value) {
             await this.click();
             await this.setValue(value);
         }, true);

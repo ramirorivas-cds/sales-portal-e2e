@@ -1,0 +1,66 @@
+{
+  "uid" : "e96d2a8ac6fd802c",
+  "name" : "Then I see the following elements in the success screen",
+  "fullName" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy.Then I see the following elements in the success screen",
+  "historyId" : "7743327d843170e206df5d65bc0a7174",
+  "time" : {
+    "start" : 1637246074793,
+    "stop" : 1637246074793,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy"
+  }, {
+    "name" : "testClass",
+    "value" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then I see the following elements in the success screen"
+  }, {
+    "name" : "package",
+    "value" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-95.0.4638.69"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "7e723a65f1e9dfb8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637244698095,
+        "stop" : 1637244714130,
+        "duration" : 16035
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e96d2a8ac6fd802c.json",
+  "parameterValues" : [ "chrome-95.0.4638.69" ]
+}

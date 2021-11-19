@@ -1,0 +1,72 @@
+{
+  "uid" : "3c938014822c142d",
+  "name" : "And I navigate to the coverage screen",
+  "fullName" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy.And I navigate to the coverage screen",
+  "historyId" : "9b5fa341161b710f828d207b5d4cf793",
+  "time" : {
+    "start" : 1637246061072,
+    "stop" : 1637246074792,
+    "duration" : 13720
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Error: element (\"#nextQuoteWi\") still not clickable after 10000ms",
+  "statusTrace" : "Error: element (\"#nextQuoteWi\") still not clickable after 10000ms\n                    at /Users/ramirorivas/Desktop/sales-automation/node_modules/webdriverio/build/commands/browser/waitUntil.js:66:23\n                    at Element.wrapCommandFn (/Users/ramirorivas/Desktop/sales-automation/node_modules/@wdio/utils/build/shim.js:131:29)\n                    at Element.elementErrorHandlerCallbackFn (/Users/ramirorivas/Desktop/sales-automation/node_modules/webdriverio/build/middlewares.js:24:32)\n                    at Element.wrapCommandFn (/Users/ramirorivas/Desktop/sales-automation/node_modules/@wdio/utils/build/shim.js:131:29)\n                    at Element.wrapCommandFn (/Users/ramirorivas/Desktop/sales-automation/node_modules/@wdio/utils/build/shim.js:131:29)\n                    at Element.elementErrorHandlerCallbackFn (/Users/ramirorivas/Desktop/sales-automation/node_modules/webdriverio/build/middlewares.js:24:32)\n                    at Element.wrapCommandFn (/Users/ramirorivas/Desktop/sales-automation/node_modules/@wdio/utils/build/shim.js:131:29)\n                    at Element.<anonymous> (/Users/ramirorivas/Desktop/sales-automation/wdio.conf.js:242:13)\n                    at Element.wrapCommandFn (/Users/ramirorivas/Desktop/sales-automation/node_modules/@wdio/utils/build/shim.js:131:29)\n                    at Element.wrapCommandFn (/Users/ramirorivas/Desktop/sales-automation/node_modules/@wdio/utils/build/shim.js:131:29)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy"
+  }, {
+    "name" : "testClass",
+    "value" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy"
+  }, {
+    "name" : "testMethod",
+    "value" : "And I navigate to the coverage screen"
+  }, {
+    "name" : "package",
+    "value" : "Home Page Tests: As a user, I can purchase a mortgagee billed policy"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-95.0.4638.69"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5cf08e1755c7662e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637244659037,
+        "stop" : 1637244669449,
+        "duration" : 10412
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "3c938014822c142d.json",
+  "parameterValues" : [ "chrome-95.0.4638.69" ]
+}
