@@ -15,7 +15,7 @@ Feature: Navigation feature
             | yellow path | reward  |
             | red path    | kickout |
 
-    @Nav002 @sections @web @salesPortal
+    @Nav002 @sections @salesPortal
     Scenario Outline: As a user, I can navegate through the different sections of the home page
 
         Given I am on the home page

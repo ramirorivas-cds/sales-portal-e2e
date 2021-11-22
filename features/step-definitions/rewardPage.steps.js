@@ -7,7 +7,6 @@ import { quoteToDollarInt } from '../../utils/helpers';
 When(/^I select the (.+) score$/, async (score) => {
     world.quoteValue = await quoteToDollarInt(await RewardPage.getQuote());
     await RewardPage.selectCreditScore(score);
-    await RewardPage.waitForQuoteToChange();
 });
 
 When(/^I select the following rewards$/, async (table) => {
@@ -39,6 +38,9 @@ Then(/^I see my insurance score is (.+)$/, async (creditScoreVal) => {
 });
 
 Then(/^I see my premium quote (.+)$/, async (action) => {
+    if(action != 'remains the same') {
+        await RewardPage.waitForQuoteToChange();
+    }
     let actualQuote = await quoteToDollarInt(await RewardPage.getQuote());
     await expectQuoteTo(action,actualQuote);
 });

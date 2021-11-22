@@ -70,11 +70,6 @@ class HomePage extends Page {
         await this.checkBox.waitForClick();
     }
 
-    async goToNextPage() {
-        await this.getMyQuoteBtn.waitForClick();
-        await super.waitForSpinner();
-    }
-
     async goToSection(section) {
         let element;
         switch(section.toLowerCase()) {
@@ -95,7 +90,11 @@ class HomePage extends Page {
         }
         await element.waitForClick();
     }
-
+    
+    async goToNextPage() {
+        await this.getMyQuoteBtn.waitForClick();
+        await super.waitForSpinner();
+    }
 }
 
 export default new HomePage();

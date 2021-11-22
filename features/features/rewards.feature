@@ -1,3 +1,4 @@
+@testing
 Feature: Rewards tests
 
     Test that aim to test reward screen scenarios
@@ -8,47 +9,45 @@ Feature: Rewards tests
         Given I am on the home page
         When I enter a <address> address
         Then I see the following elements in the reward screen
-            | element                    |
-            | military                   |
-            | tankless water heater      |
-            | burglar alarm              |
-            | fire protection            |
-            | water detection & shutoff  |
-            | age 60 and over            |
-            | secured community          |
-            | surge protection           |
-            | non-smoker                 |
-            | hurricane windows/shutters |
+            | element                   |
+            | military                  |
+            | tankless water heater     |
+            | burglar alarm             |
+            | age 60 and over           |
+            | fire protection           |
+            | water detection & shutoff |
+            | secured community         |
+            | surge protection          |
+            | non-smoker                |
+            | hurricane windows         |
 
         Examples:
             | address     |
             | green path  |
             | yellow path |
 
-    @Rewards002 @web @salesPortal
+    @Rewards002 @web @salesPortal 
     Scenario Outline: As a user, I can see non-rated rewards
         Given I am on the home page
         When I enter a <address> address
         Then I see the following elements in the reward screen
             | element                  |
             | video door bell          |
-            | high AC seer rating      |
+            | high ac seer rating      |
             | fire extinguisher        |
             | smart lock               |
-            | solar panel              |
-            | pest control             |
             | home warranty            |
             | whole house              |
-            | HOA member               |
+            | solar panel              |
+            | pest control             |
+            | hoa                      |
             | safe driver              |
             | purchased life insurance |
-            | pet owner                |
-            | id theft protection      |
             | organ donor              |
             | smart thermostat         |
-            | blood donor              |
             | gym member               |
             | smart devices            |
+            | blood donor              |
 
         Examples:
             | address     |
@@ -79,7 +78,7 @@ Feature: Rewards tests
             | green path | highest | decreases |
             | green path | lowest  | increases |
 
-    @Rewards005 @web @salesPortal
+    @Rewards005 @web @salesPortal 
     Scenario Outline: As a user, when I select a reward my premium decreases
         Given I am on the home page
         And I enter a <address> address
@@ -126,7 +125,7 @@ Feature: Rewards tests
             | address    |
             | green path |
 
-    @Rewards008 @web @salesPortal
+    @Rewards008 @web @salesPortal 
     Scenario Outline: As a user, If I exceed the non-rated rewards amount, the rewards I select don't affect the pemium
         Given I am on the home page
         And I enter a <address> address
