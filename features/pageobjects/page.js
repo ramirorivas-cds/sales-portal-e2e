@@ -5,7 +5,8 @@
 
 import { config } from '../../wdio.conf';
 import Spinner from './components/spinner';
-import QuoteBox from './components/quoteBox';
+
+
 
 export default class Page {
 
@@ -32,6 +33,10 @@ export default class Page {
 
     async getRewardsAmount() {
         return await QuoteBox.getRewardAmountValue();
+    }
+
+    async getQuote() {
+        return await QuoteBox.getQuote();
     }
 
 }

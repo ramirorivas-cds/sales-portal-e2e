@@ -1,7 +1,8 @@
 import Page from './page'
 import { literals } from '../../utils/literals';
 import { enums } from '../../utils/enums';
-import { hasPriorLosses, isCoverageModalOpened } from '../../world';
+import world, { hasPriorLosses, isCoverageModalOpened } from '../../world';
+import QuoteBox from './components/quoteBox';
 
 const {
     salesCoverages
@@ -15,7 +16,12 @@ const {
     basic,
     recommended,
     luxury
-} = enums.coverageType
+} = enums.coverageType;
+
+const {
+    poor,
+    exceptional
+} = literals.creditScoreValues;
 
 class CoveragePage extends Page {
 
@@ -51,6 +57,12 @@ class CoveragePage extends Page {
     get continueToInfoBtn() { return $('#continueEndorsementsModalButton')};
 
     
+    // Home score
+    get dwellingSlider() { return $('#dwelling') }
+    get homeScoreValue()  { return $('MuiSlider-valueLabel [1]') }
+
+    get quoteValue() { return $('h3 span:first-child') }
+
     getPageUrl() {
         return this.url;
     }
@@ -78,6 +90,22 @@ class CoveragePage extends Page {
         await selected.waitForClick();
     }
 
+    async selectStandardOption(){
+        await this.selectPriorLosses();
+        await this.selectCoverageOption();
+    }
+
+    async selectDwelling(action) {
+        world.quoteValue = await super.getQuote();
+        action === 'increase' 
+            ? await this.dwellingSlider.waitForDropped({x:exceptional, y:0}) 
+            : await this.dwellingSlider.waitForDropped({x:poor, y:0});
+    }
+
+    async getQuote(){
+        return await QuoteBox.quoteValue.getVal();
+    }   
+    
     async goToNextPage(priorLosses = hasPriorLosses) {
         if(!isCoverageModalOpened) {
             await this.selectPriorLosses(priorLosses);
@@ -85,12 +113,6 @@ class CoveragePage extends Page {
         }
         await this.continueToInfoBtn.waitForClick();
     }
-
-
-
-
-    
-
 }
 
 export default new CoveragePage();
