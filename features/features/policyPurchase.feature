@@ -1,6 +1,6 @@
 Feature: Home Page Tests
 
-    @PolicyPurchase001 @web @sales @testing
+    @PolicyPurchase001 @web @sales 
     Scenario Outline: As a user, I can purchase a mortgagee billed policy
         Given I am on the home page
         And I enter a <address> address

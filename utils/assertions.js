@@ -15,7 +15,7 @@ export const expectTextToEqIgnoreCase = (actual,expected) => {
     chaiExpect(actual.toLowerCase()).to.equal(expected.toLowerCase());
 }
 
-export const expectQuoteTo = async (action,actualValue) => {
+export const expectQuoteTo = async (action,actualValue) => { 
     switch(action.toLowerCase()) {
         case 'increases':
             chaiExpect(parseInt(actualValue)).to.be.greaterThan(parseInt(world.quoteValue));

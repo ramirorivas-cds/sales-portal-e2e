@@ -43,7 +43,7 @@ const ratedRewards = {
     securedCommunity: 'secured community',
     surgeProtection: 'surge protection',
     nonSmoker: 'non-smoker',
-    openingProtection: 'hurricane windows/shutters',
+    openingProtection: 'hurricane windows',
     military: 'military'
 }
 
@@ -56,7 +56,7 @@ const nonRatedRewards = {
     pestControl: 'pest control',
     homeWarranty: 'home warranty',
     wholeHouse: 'whole house',
-    hoaMember: 'hoa member',
+    hoaMember: 'hoa',
     safeDriver: 'safe driver',
     purchasedLifeInsurance: 'purchased life insurance',
     petOwner: 'pet owner',

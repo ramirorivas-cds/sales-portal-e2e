@@ -73,6 +73,7 @@ class RewardPage extends Page {
     }
 
     async getQuote() {
+        await this.quoteValue.waitForDisplayed();
         return await this.quoteValue.getVal();
     }
 
@@ -115,7 +116,7 @@ class RewardPage extends Page {
      */
     async elementSwitcher(element) {
         let selected;
-        switch (element.toLowerCase()) {
+        switch (element) {
             case ratedRewards.burglarAalarm:
                 selected = await this.burglarAlarmRwd;
                 break;
@@ -134,7 +135,7 @@ class RewardPage extends Page {
             case ratedRewards.accreditedBuilder:
                 selected = await this.accreditedBuilderRwd;
                 break;
-            case ratedRewards.ageOverSixtyRwd:
+            case ratedRewards.overAgeSixty:
                 selected = await this.ageOverSixtyRwd;
                 break;
             case ratedRewards.securedCommunity:
