@@ -3,7 +3,6 @@ Feature: Rewards tests
 
     Test that aim to test reward screen scenarios
 
-    @Rewards001 @web @salesPortal
     Scenario Outline: As a user, I can see the rated rewards
 
         Given I am on the home page
@@ -52,7 +51,7 @@ Feature: Rewards tests
         Examples:
             | address     |
             | green path  |
-            | yellow path |
+            # | yellow path |
 
     @Rewards003  @creditScore @web @salesPortal
     Scenario Outline: As a user I can select the <score> insurance score

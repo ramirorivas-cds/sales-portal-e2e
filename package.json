@@ -6,7 +6,7 @@
         "@babel/register": "^7.16.0",
         "@cucumber/cucumber": "^8.0.0-rc.1",
         "@wdio/allure-reporter": "^7.16.6",
-        "@wdio/cli": "^7.16.4",
+        "@wdio/cli": "^7.16.9",
         "@wdio/cucumber-framework": "^7.16.4",
         "@wdio/local-runner": "^7.16.4",
         "@wdio/spec-reporter": "^7.16.4",
