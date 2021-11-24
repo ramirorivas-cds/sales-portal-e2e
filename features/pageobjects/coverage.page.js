@@ -1,7 +1,8 @@
 import Page from './page'
 import { literals } from '../../utils/literals';
 import { enums } from '../../utils/enums';
-import { hasPriorLosses, isCoverageModalOpened } from '../../world';
+import world, { hasPriorLosses, isCoverageModalOpened } from '../../world';
+import { quoteToDollarInt } from '../../utils/helpers';
 
 const {
     pagesIds,
@@ -9,13 +10,14 @@ const {
 } = enums;
 
 const {
-    coveragePageUrl
-} = literals.urls;
+    urls,
+    creditScoreLimitsVal
+} = literals;
 
 class CoveragePage extends Page {
 
     constructor() {
-        super(pagesIds.salesCoverages, coveragePageUrl);
+        super(pagesIds.salesCoverages, urls.coveragePageUrl);
     }
 
     // Prior losses section
@@ -45,6 +47,9 @@ class CoveragePage extends Page {
     // Modal 
     get continueToInfoBtn() { return $('#continueEndorsementsModalButton')};
 
+    // Coverages 
+    get dwelling() { return $('#dwelling span[role="slider"]')}
+
     
     getPageUrl() {
         return this.url;
@@ -71,6 +76,28 @@ class CoveragePage extends Page {
                 throw new Error(`${option} is not a valid coverage type to choose`);
         }
         await selected.waitForClick();
+    }
+
+    async selectDefaultCoverageOptions() {
+        await this.selectPriorLosses();
+        await this.selectCoverageOption();
+    }
+
+    async getQuote() {
+        return await super.getQuote();
+    }
+
+    async waitForQuoteToChange() {
+        await super.waitForQuoteToChange();
+    }
+
+    async moveDwelling(action){
+        let x;
+        world.quoteValue = quoteToDollarInt(await super.getQuote());
+        await this.dwelling.scrollIntoView(true); 
+        action === 'increase' ? x = 400 : x = -230; 
+        await this.dwelling.waitForDropped({ x: x, y: 0 });
+
     }
 
     async goToNextPage(priorLosses = hasPriorLosses) { //to-do add condition for prior losses 

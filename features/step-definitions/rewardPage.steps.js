@@ -37,14 +37,6 @@ Then(/^I see my insurance score is (.+)$/, async (creditScoreVal) => {
     await expectTextToEqIgnoreCase(actualCreditScore, creditScoreVal);
 });
 
-Then(/^I see my premium quote (.+)$/, async (action) => {
-    if(action != 'remains the same') {
-        await RewardPage.waitForQuoteToChange();
-    }
-    let actualQuote = await quoteToDollarInt(await RewardPage.getQuote());
-    await expectQuoteTo(action,actualQuote);
-});
-
 Then(/^I see that my quotebox shows the correct amount of rewards selected$/, async () => {
     await RewardPage.waitForQuoteToChange();
     let actualRewardAmount = await RewardPage.getQuoteBoxRewardAmount();

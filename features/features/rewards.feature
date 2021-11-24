@@ -1,4 +1,3 @@
-@testing
 Feature: Rewards tests
 
     Test that aim to test reward screen scenarios
@@ -74,8 +73,8 @@ Feature: Rewards tests
 
         Examples:
             | address    | score   | action    |
-            | green path | highest | decreases |
-            | green path | lowest  | increases |
+            | green path | highest | decrease |
+            | green path | lowest  | increase |
 
     @Rewards005 @web @salesPortal 
     Scenario Outline: As a user, when I select a reward my premium decreases
@@ -91,7 +90,7 @@ Feature: Rewards tests
 
         Examples:
             | address    | action    |
-            | green path | decreases |
+            | green path | decrease |
 
     @Rewards006 @web @salesPortal
     Scenario Outline: As a user, if I select more than $100 in non-rated rewards I see a modal

@@ -73,12 +73,11 @@ class RewardPage extends Page {
     }
 
     async getQuote() {
-        await this.quoteValue.waitForDisplayed();
-        return await this.quoteValue.getVal();
+        await super.getQuote();
     }
 
     async waitForQuoteToChange() {
-        await this.quoteValue.waitForValueToChange();
+        await super.waitForQuoteToChange();
     }
 
     /**
