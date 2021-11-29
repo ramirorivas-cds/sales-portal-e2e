@@ -250,6 +250,12 @@ exports.config = {
             await this.setValue(value);
         }, true);
 
+        browser.addCommand('clickAndSetVal', async function (value, timeout = 10000, reverse = false) {
+            await this.waitForDisplayed({ timeout, reverse });
+            await this.click();
+            await this.setValue(value);
+        }, true);
+
         browser.addCommand('getVal', async function (timeout = 10000) {
             await this.waitForDisplayed({ timeout });
             const val = await this.getText();
@@ -269,7 +275,7 @@ exports.config = {
             }, { timeout, interval: 500 });
         }, true);
 
-        browser.addCommand('clickAndSetVal', async function (value, timeout = 10000, reverse = false) {
+        browser.addCommand('clickAndSetVal', async function (value) {
             await this.click();
             await this.setValue(value);
         }, true);
@@ -296,8 +302,9 @@ exports.config = {
      * Runs before a Cucumber Scenario.
      * @param {ITestCaseHookParameter} world world object containing information on pickle and test step
      */
-    beforeScenario: function (world) {
-        browser.maximizeWindow();
+    beforeScenario: async function (world) {
+        await browser.maximizeWindow();
+        await browser.deleteCookies();
     },
     /**
      *

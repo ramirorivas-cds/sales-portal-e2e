@@ -18,8 +18,6 @@ class InfoPage extends Page {
         super(pagesIds.salesInfo, infoPageUrl);
     }
 
-    get checkBox() { return $('#acceptConditionsInsuredCheckbox-container') }
-
     // Primary insured data
     get insuredFirstName() { return $$('#firstName')[0] }
     get insuredLastName()  { return $$('#lastName')[0] }
@@ -51,13 +49,14 @@ class InfoPage extends Page {
     get formError() { return $$('p + p')[5]}
 
     get goToCheckoutBtn() { return $('#proceedInsuredStepButton') }
+
+    // sign in 
+    get emailInput()    { return $('#email')}
+    get passwordInput() { return $('#password')}
+    get signInBtn()     { return $('#signInLoginModalButton')}
   
     getPageUrl() {
         return this.url;
-    }
-
-    async checkDisclosure() {
-        await this.checkBox.waitForClick();
     }
 
     async completeFirstInsured({firstName, lastName, email, phone, birthday} = {}) {
@@ -122,6 +121,12 @@ class InfoPage extends Page {
                 throw new Error(`${element} is not a valid element for ${this.pageId}`);
         }
         return selected;
+    }
+
+    async signIn({pwd} = {}) {
+        this.waitForSpinner();
+        await this.passwordInput.setVal(pwd);
+        await this.signInBtn.waitForClick();
     }
 
     async screenValidation(element, reverse) {

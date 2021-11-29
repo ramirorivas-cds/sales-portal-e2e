@@ -30,7 +30,8 @@ const pagesIds = {
     salesCoverages: 'SalesCoverage',
     salesInfo: 'SalesInfo',
     salesCheckout: 'SalesCheckout',
-    salesSuccess: 'SalesSuccess'
+    salesSuccess: 'SalesSuccess',
+    salesBill2Pay: 'SalesBill2Pay'
 }
 
 const ratedRewards = {
@@ -91,12 +92,18 @@ const coverageType = {
 
 const paymentType = {
     mortgagee: 'mortgagee',
-    fullPay: 'full pay',
-    elevenPay: 'eleven pay'
+    fullPay: 'full-pay',
+    elevenPay: 'eleven-pay'
 }
 
 const successElements = {
-    nextStepsButton: 'next steps button'
+    nextStepsButton: 'next steps button',
+    activateAccountButton: 'activate account button'
+}
+
+const entities = {
+    policy : 'policy',
+    application: 'application'
 }
 
 export const enums = {
@@ -110,5 +117,6 @@ export const enums = {
     coverageType,
     infoPageElements,
     paymentType,
-    successElements
+    successElements,
+    entities
 }

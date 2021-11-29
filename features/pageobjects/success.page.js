@@ -20,6 +20,7 @@ class CheckoutPage extends Page {
     }
 
     get nextSteps() { return $('#activateAccountNextStepBoxButton')}
+    get activateAccount() {return $('#getStartedAltNextStepBoxButton')}
     
     getPageUrl() {
         return this.url;
@@ -35,6 +36,9 @@ class CheckoutPage extends Page {
             switch (element.toLowerCase()) {
                 case successElements.nextStepsButton:
                     selected = await this.nextSteps;
+                    break;
+                case successElements.activateAccountButton:
+                    selected = await this.activateAccount;
                     break;
                 default:
                     throw new Error(`${element} is not a valid element for ${this.pageId}`);
