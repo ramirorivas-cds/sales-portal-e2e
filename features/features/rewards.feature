@@ -1,4 +1,3 @@
-@testing
 Feature: Rewards tests
 
     Test that aim to test reward screen scenarios

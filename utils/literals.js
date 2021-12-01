@@ -19,6 +19,7 @@ const urls = {
     infoPageUrl: 'https://test-app.openhouseinsurance.com/quote/insured',
     checkoutPageUrl: 'https://dev-app.openhouseinsurance.com/quote/disclosures',
     successPageUrl: 'https://test-app.openhouseinsurance.com/policy',
+    bill2pay: 'https://insurance.qa.bill2pay.com/Payment.aspx',
 }
 
 const paths = {
@@ -50,7 +51,11 @@ const primaryInsured = {
         lastName: 'Doe',
         email: `john${Math.floor(Math.random()*9999)}@testemail.com`,
         phone: '1234561234',
-        birthday: '12/12/1979'
+        birthday: '12/12/1979',
+        zipCode: '32835', 
+        cardNumber: '4111 1111 1111 1111 11111',
+        cardExpDate: '2 2025',
+        cardCVV: '111'
     },
 
     completeUserOverSixty: {
@@ -59,6 +64,15 @@ const primaryInsured = {
         email: `john${Math.floor(Math.random()*9999)}@testemail.com`,
         phone: '1234561234',
         birthday: '12/12/1959'
+    },
+
+    completeRepeatedUser: {
+        firstName: 'John',
+        lastName: 'Doe',
+        email: 'john1863@testemail.com',
+        phone: '1234561234',
+        birthday: '12/12/1959',
+        pwd: 'cdelsur1'
     },
 
     incompleteUser: {
