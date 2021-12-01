@@ -70,7 +70,7 @@ Feature: Home Page Tests
             | address    | payment  |
             | green path | full-pay |
 
-    @PolicyPurchase004 @web @sales @testing
+    @PolicyPurchase004 @web @sales 
     Scenario Outline: As a user, I can purchase an eleven pay policy
         Given I am on the home page
         And I enter a <address> address
