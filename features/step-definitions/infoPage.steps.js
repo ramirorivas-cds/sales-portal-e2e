@@ -27,6 +27,11 @@ When(/^I enter a complete primary insured$/, async () => {
     await InfoPage.completeFirstInsured(primaryInsured.completeUser);
 })
 
+When(/^I enter a complete repeated primary insured and continue$/, async () => {
+    await InfoPage.completeFirstInsured(primaryInsured.completeRepeatedUser);
+    await InfoPage.goToNextPage();
+})
+
 When(/^I enter a complete repeated primary insured$/, async () => {
     await InfoPage.completeFirstInsured(primaryInsured.completeRepeatedUser);
 })
