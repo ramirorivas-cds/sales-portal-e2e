@@ -1,6 +1,7 @@
+@testing
 Feature: Home Page Tests
 
-    @PolicyPurchase001 @web @sales
+    @PolicyPurchase001 @web @sales 
     Scenario Outline: As a user, I can purchase a mortgagee billed policy
         Given I am on the home page
         And I enter a <address> address
@@ -53,7 +54,7 @@ Feature: Home Page Tests
             | green path |
 
 
-    @PolicyPurchase004 @web @sales
+    @PolicyPurchase004 @web @sales @testing
     Scenario Outline: As a user, I can purchase a full pay policy
         Given I am on the home page
         And I enter a <address> address
