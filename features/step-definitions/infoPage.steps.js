@@ -54,3 +54,7 @@ When(/^I enter an existant primary insured and continue$/, async () => {
 When(/^I log in to the app$/, async () => {
     await InfoPage.signIn(primaryInsured.completeRepeatedUser);
 })
+
+When(/^I modify the effective date to the (\w+)$/, async (future) => {
+    await InfoPage.setBackDate(future);
+});

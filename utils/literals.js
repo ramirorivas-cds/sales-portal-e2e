@@ -18,7 +18,7 @@ const urls = {
     coveragePageUrl: 'https://test-app.openhouseinsurance.com/quote/coverages',
     infoPageUrl: 'https://test-app.openhouseinsurance.com/quote/insured',
     checkoutPageUrl: 'https://dev-app.openhouseinsurance.com/quote/disclosures',
-    successPageUrl: 'https://test-app.openhouseinsurance.com/policy',
+    successPageUrl: 'https://test-app.openhouseinsurance.com/policy-next-steps',
     bill2pay: 'https://insurance.qa.bill2pay.com/Payment.aspx',
 }
 
@@ -47,9 +47,9 @@ const creditScoreValues = {
 const primaryInsured = {
 
     completeUser: {
-        firstName: 'John',
+        firstName: 'Ramiro',
         lastName: 'Doe',
-        email: `john${Math.floor(Math.random()*9999)}@testemail.com`,
+        email: `john${Math.floor(Math.random()*9999)}@testemail2.com`,
         phone: '1234561234',
         birthday: '12/12/1979',
         zipCode: '32835', 

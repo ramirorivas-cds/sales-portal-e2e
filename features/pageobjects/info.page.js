@@ -1,7 +1,8 @@
 import Page from './page';
 import { literals } from '../../utils/literals';
 import { enums } from "../../utils/enums";
-import { isTrueSet } from '../../utils/helpers';
+import { dateFormatter, isTrueSet } from '../../utils/helpers';
+import moment from 'moment';
 
 const {
     infoPageUrl
@@ -35,15 +36,17 @@ class InfoPage extends Page {
     get coApplicantRelation()  { return $$('#relationshipToPrimary')[0] }
 
     // Mortgagee
+    get mortgageeBtn()       { return $('#addMortgageeFormButton')}
+    get primaryCompanyName() { return $$('#bank_name')[0]}
+    get primaryLoanNumber()  { return $$('#loan_number')[0]}
+    get primaryAddress()     { return $$('input#address')[1]}
+    get primaryCity()        { return $('input#city')}
+    get primaryState()       { return $$('#state[role="button"]')[0]}
+    get primaryPostal()      { return $$('input#postalCode')[0]}
+    get primaryType()        { return $$('#mortgageeType')[0]}
 
-    get mortgageeBtn() { return $('#addMortgageeFormButton')}
-    get primaryCompanyName()  { return $$('#bank_name')[0]}
-    get primaryLoanNumber() { return $$('#loan_number')[0]}
-    get primaryAddress()    { return $$('input#address')[1]}
-    get primaryCity()       { return $('input#city')}
-    get primaryState()      { return $$('#state[role="button"]')[0]}
-    get primaryPostal()     { return $$('input#postalCode')[0]}
-    get primaryType()       { return $$('#mortgageeType')[0]}
+    // Effective Date 
+    get effectiveDate() { return $('#effectiveDate')}
 
     // Validation error 
     get formError() { return $$('p + p')[5]}
@@ -77,6 +80,20 @@ class InfoPage extends Page {
         await this.coApplicantPhone.setVal(phone);
         await this.coApplicantBirthday.clickAndSetVal(birthday);
         await this.coApplicantRelation.setVal(relationToPrimary);
+    }
+
+    async setBackDate(date) {
+        let effectiveDate;
+        switch(date) {
+            case 'past':
+                effectiveDate = moment().subtract(26, 'days').calendar();
+                break;
+            default:
+                throw new Error(`${date} is not a possible date`);
+        }
+        effectiveDate = dateFormatter(effectiveDate);
+        await this.effectiveDate.waitForClick();
+        await this.effectiveDate.setVal(effectiveDate);
     }
 
     async selectPrimaryMortgageeState (state = 'FL'){
