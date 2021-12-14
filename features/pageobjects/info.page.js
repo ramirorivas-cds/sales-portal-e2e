@@ -2,6 +2,7 @@ import Page from './page';
 import { literals } from '../../utils/literals';
 import { enums } from "../../utils/enums";
 import { isTrueSet } from '../../utils/helpers';
+import moment from 'moment';
 
 const {
     infoPageUrl
@@ -36,14 +37,16 @@ class InfoPage extends Page {
 
     // Mortgagee
 
-    get mortgageeBtn() { return $('#addMortgageeFormButton')}
-    get primaryCompanyName()  { return $$('#bank_name')[0]}
-    get primaryLoanNumber() { return $$('#loan_number')[0]}
-    get primaryAddress()    { return $$('input#address')[1]}
-    get primaryCity()       { return $('input#city')}
-    get primaryState()      { return $$('#state[role="button"]')[0]}
-    get primaryPostal()     { return $$('input#postalCode')[0]}
-    get primaryType()       { return $$('#mortgageeType')[0]}
+    get mortgageeBtn()       { return $('#addMortgageeFormButton')}
+    get primaryCompanyName() { return $$('#bank_name')[0]}
+    get primaryLoanNumber()  { return $$('#loan_number')[0]}
+    get primaryAddress()     { return $$('input#address')[1]}
+    get primaryCity()        { return $('input#city')}
+    get primaryState()       { return $$('#state[role="button"]')[0]}
+    get primaryPostal()      { return $$('input#postalCode')[0]}
+    get primaryType()        { return $$('#mortgageeType')[0]}
+
+    get effectiveDate() { return $('#effectiveDate')}   
 
     // Validation error 
     get formError() { return $$('p + p')[5]}
@@ -89,6 +92,11 @@ class InfoPage extends Page {
         await this.primaryType.waitForClick();
         let selector = `li[data-value="${primaryMortgagee}"]`;
         await $(selector).waitForClick();
+    }
+
+    async chooseEffectiveDate(days) {
+        let today = moment(moment().subtract(days, 'days').calendar()).format('DD/MM/YYYY');
+        await this.effectiveDate.setVal(today);
     }
 
     async completePrimaryMortgagee({companyName, loanNumber, address, city, state, postalCode, isPrimaryMortgagee} = {}) {
