@@ -54,3 +54,11 @@ When(/^I enter an existant primary insured and continue$/, async () => {
 When(/^I log in to the app$/, async () => {
     await InfoPage.signIn(primaryInsured.completeRepeatedUser);
 })
+
+When(/^I select a (.+) days backdated policy$/, async (days) => {
+    await InfoPage.chooseEffectiveDate(days);
+});
+
+When(/^I continue to the checkout screen$/, async () => {
+    await InfoPage.goToNextPage();
+})

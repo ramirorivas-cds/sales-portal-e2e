@@ -41,7 +41,7 @@ class CheckoutPage extends Page {
     }
 
     async completeDisclosures(entity = entities.policy) {
-        await this.sinkHoleExclusionCheck.waitForClick({timeout: config.timeout.XXL});
+        await this.sinkHoleExclusionCheck.waitForClick({timeout: 30000});
         await this.floodExclusionCheck.waitForClick();
         if (entity === entities.application) await this.selfInspectionCheck.waitForClick();
         await this.applicationSignatureCheck.waitForClick();
