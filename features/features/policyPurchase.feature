@@ -33,8 +33,7 @@ Feature: Home Page Tests
             | address     |
             | yellow path |
 
-
-    @PolicyPurchase003 @web @sales
+    @PolicyPurchase003 @web @sales 
     Scenario Outline: As a user, I can purchase a mortgagee billed policy with a registered user
         Given I am on the home page
         And I enter a <address> address
@@ -52,8 +51,7 @@ Feature: Home Page Tests
             | address    |
             | green path |
 
-
-    @PolicyPurchase004 @web @sales
+    @PolicyPurchase004 @web @sales 
     Scenario Outline: As a user, I can purchase a full pay policy
         Given I am on the home page
         And I enter a <address> address
@@ -70,7 +68,7 @@ Feature: Home Page Tests
             | address    | payment  |
             | green path | full-pay |
 
-    @PolicyPurchase004 @web @sales
+    @PolicyPurchase004 @web @sales @testing
     Scenario Outline: As a user, I can purchase an eleven pay policy
         Given I am on the home page
         And I enter a <address> address
@@ -140,7 +138,7 @@ Feature: Home Page Tests
             | address     |
             | yellow path |
 
-    @PolicyPurchase008 @web @sales
+    @PolicyPurchase008 @web @sales 
     Scenario Outline: As a user, I can purchase a backdated mortgagee billed policy
         Given I am on the home page
         And I enter a <address> address
@@ -155,8 +153,8 @@ Feature: Home Page Tests
             | next steps button |
 
         Examples:
-            | address    | days |
-            | green path | 36   |
+            | address    | days  |
+            | green path | 12   |
     
     @PolicyPurchase009 @web @sales 
     Scenario Outline: As a user, I can purchase an eleven pay policy back dated 
@@ -175,7 +173,7 @@ Feature: Home Page Tests
 
         Examples:
             | address    | payment    | days |
-            | green path | eleven-pay | 36   |
+            | green path | eleven-pay | 63   |
 
     @PolicyPurchase004 @web @sales 
     Scenario Outline: As a user, I can purchase a back dated full pay policy
@@ -194,7 +192,7 @@ Feature: Home Page Tests
 
         Examples:
             | address    | payment  | days |
-            | green path | full-pay | 36   |
+            | green path | full-pay | 10   |
 
 
 

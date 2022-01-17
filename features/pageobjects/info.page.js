@@ -95,8 +95,8 @@ class InfoPage extends Page {
     }
 
     async chooseEffectiveDate(days) {
-        let today = moment(moment().subtract(days, 'days').calendar()).format('DD/MM/YYYY');
-        await this.effectiveDate.setVal(today);
+        let today = moment().subtract(days, 'days').calendar();
+        await this.effectiveDate.clickAndSetVal(today);
     }
 
     async completePrimaryMortgagee({companyName, loanNumber, address, city, state, postalCode, isPrimaryMortgagee} = {}) {
