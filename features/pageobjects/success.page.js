@@ -48,7 +48,7 @@ class CheckoutPage extends Page {
     
         async screenValidation(element, reverse,timeout = config.timeout.XXL) {
             let selected = await this.elementSwitcher(element);
-            await selected.waitForDisplayed({ timeout: timeout,reverse: isTrueSet(reverse) });
+            await selected.waitForDisplayed({ timeout: timeout, reverse: isTrueSet(reverse) });
         }
     
 }

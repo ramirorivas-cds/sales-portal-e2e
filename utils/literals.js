@@ -67,9 +67,9 @@ const primaryInsured = {
     },
 
     completeRepeatedUser: {
-        firstName: 'John',
-        lastName: 'Doe',
-        email: 'john1863@testemail.com',
+        firstName: 'Ramiro',
+        lastName: 'Rivas',
+        email: 'john139@testemail.com',
         phone: '1234561234',
         birthday: '12/12/1959',
         pwd: 'cdelsur1'
